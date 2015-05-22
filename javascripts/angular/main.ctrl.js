@@ -56,7 +56,9 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 
 	vm.saveInfo = function(isValid) {
-		if (isValid) {
+		alert ('submited: '+ $scope.userForm.submitted);	
+		alert ('Valid: '+ isValid);	
+			if (isValid) {
 						alert('our form is amazing');
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
  						.success(
