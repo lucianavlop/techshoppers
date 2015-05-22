@@ -1,0 +1,66 @@
+        <div class="six columns" id="you">
+
+          
+          <!-- You Section -->
+          
+          <h3>YOU</h3>
+
+          <!-- Row Layout for forms -->
+           <input type="text"  ng-model="main.composeEmail.name"  placeholder="Name " />
+           <input type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City" />
+           <input type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email" />
+		   
+            <label>Age</label>
+				
+		  <select  ng-model="main.composeEmail.age" >
+			    <option value="" ></option>
+			    
+				<option value="Teenager" >Teenager</option>
+				<option value="Twenties">Twenties</option>
+			     <option value="Fourties" >Fourties</option>
+			     <option value="Fifties">Fifties</option>
+			     <option value="Sixties">Sixties</option>
+				 <option value="Seventies">Seventies</option>
+				 <option value="Eighties">Eighties</option>
+			</select>
+			<br>
+			<br>
+			<label>Profession</label>
+            <input type="text" class="twelve"  ng-model="main.composeEmail.prof" 
+			placeholder="E.g. Nurse, Engineer, Journalist ...." />
+            
+			<label>Hobbies</label>
+			  <input type="text" ng-model="main.composeEmail.hobbie"
+		         placeholder="E.g. Blogging, Games, Reading ...">
+				 
+				 
+	 			<label>Budget</label>
+	 			  <input type="text" ng-model="main.composeEmail.budget"
+	 		         placeholder="Leave it blank if money is not a problem ;) ">
+		             <!-- <button ng-click="main.addItem()">Add Me</button>
+		         <li ng-repeat="item in main.items" id="item{{item.id}}">
+		             <a href="#">{{item.title}}</a>  <a ng-click="main.deleteItem($index)" class="delete-item">x</a>
+		         </li> -->
+				 
+			<!-- <select>
+			    <option value="volvo">Reading</option>
+			     <option value="saab">Gaming</option>
+			     <option value="mercedes">Blogger</option>
+			     <option>
+			</select> -->
+      
+           
+			
+			<!-- <div class="row">
+              <div class="six columns">
+                <input type="text" placeholder="City" />
+              </div>
+              <div class="three columns">
+                <input type="text" placeholder="State" />
+              </div>
+              <div class="three columns">
+                <input type="text" placeholder="ZIP" />
+              </div>
+            </div> -->
+          
+        </div>

@@ -1,0 +1,118 @@
+
+      
+<!-- ######################## Header ######################## -->
+        
+        
+        <header class="meeting">
+			<div class="layer">
+              <h1 class="welcome_text" style="color:WHITESMOKE;">Premium Shopping Experience</h1>    
+       	   </div>
+	    </header>
+        
+<!-- ######################## Section ######################## -->
+     
+   <section class="section_light">
+   
+        <div class="row">
+        
+         <div class="twelve columns" >
+            <h4><!-- span class="dropcap_black lsf-icon-dropcap" title="crown"></span>
+			  Contact with your Personal Shopper - --> Premium
+				
+				</h4>
+				<p class="grey-uppercase">
+				 Technology makes your life easier but sometimes is dificult to find the right solution 
+				 <!-- with the amount of offer out there -->.
+				 <br><br>
+				 Do you need our dedicated personal assistance? Do you have a big decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need .
+				</p>
+				
+			
+		</div>
+        
+        
+        </div>
+       </section> 
+	
+
+     
+     <section>   
+      <!-- Contact Form -->
+      <form novalidate name="userForm">
+		  <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='Premium'"  />
+		  
+	
+     
+	  <div class="row">
+		  
+		  
+  		  <div class="six columns">
+              <h3>How can we help? </h3>
+  			<br>
+  		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
+  	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
+		    </div>
+		  
+		  
+		  
+        <div class="six columns">
+          <!-- Row Layout for forms -->
+          
+           <h3>You</h3>
+           <br>
+   		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
+   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+		
+	   <div class="row">  
+         <div class="six columns">
+        <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+         </div>
+         <div class="six columns">
+         <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+         </div>
+    	</div>
+		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+		
+ 	   <div class="row">  
+ 		   	<div class="six columns">
+ 	   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required/>
+ 	    <!-- <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Your email is incorrect</p>
+ 	   -->
+ 			<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+        	</div>
+        	<div class="six columns">
+  		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+  		 required/>
+  		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+  	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+           	</div>
+      	  </div>
+		  
+		    <!-- <div class="row">
+              <div class="six columns">
+                <input ng-model="main.composeEmail.name" type="text" placeholder="City" />
+              </div>
+              <div class="three columns">
+                <input type="text" placeholder="State" />
+              </div>
+              <div class="three columns">
+                <input type="text" placeholder="ZIP" />
+              </div>
+            </div> -->
+		 </div>
+		
+	</div>
+	<div class="row">
+
+        <div class="twelve columns">
+	   <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+       
+        </div>
+	</div>
+         </form>
+       
+	   
+        </section>
+        
+		<!-- end section -->
+ 
