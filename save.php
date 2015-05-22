@@ -43,12 +43,12 @@
 	 
 	 
 	
-    // $to      = 'lucianavlop@gmail.com';
- // 	$subject = 'Premium Shopping';
- // 	$headers = 'From: technologyshoppers@example.com' . "\r\n" .
- // 	    'Reply-To: technologyshoppers@example.com' . "\r\n" .
- // 	    'X-Mailer: PHP/' . phpversion();
- //
- // 	mail($to, $subject,  $body  , $headers);
+     $to      = 'lucianavlop@gmail.com';
+  	$subject = 'Premium Shopping';
+  	$headers = 'From: technologyshoppers@example.com' . "\r\n" .
+  	    'Reply-To: technologyshoppers@example.com' . "\r\n" .
+  	    'X-Mailer: PHP/' . phpversion();
+ 
+  	mail($to, $subject,  $body  , $headers);
 
 ?>
