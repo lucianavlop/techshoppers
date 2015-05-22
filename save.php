@@ -3,7 +3,7 @@
 	 $data = file_get_contents("php://input");
 	 
 	 
-	 $filename= "storage".time().".txt";
+	 $filename=  $_ENV['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
 	 
      $myfile = fopen($filename, "a+") or die("Unable to open file!");
      $json = json_decode($data, true) ;

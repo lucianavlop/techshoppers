@@ -20,7 +20,7 @@
       
       <section class="section_main">
             
-   <form novalidate name="userForm">
+   <form novalidate name="userForm" ng-init="setFormScope(this)">
        <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='FindGadgetOther'"  />
 	   
       <div class="row">
