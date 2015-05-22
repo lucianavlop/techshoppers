@@ -1,0 +1,143 @@
+      
+<!-- ######################## Header ######################## -->
+       <header class="matchOther">
+		   
+		   <div class="layer">
+              <h1 class="welcome_text" style='color:WHITESMOKE;'>Your Perfect Match - Other</h1>
+		  </div>
+        </header>
+   
+<!-- ######################## Section ######################## -->
+	  <section class="section_light">
+	        <div class="row">
+		  
+		  
+	  	         <div class="twelve columns grey center	">
+					 The gadget that you are looking for is not in the main menu? Please let us know what it is...We try to get it for you, as <em>crazy</em> as it might sound like.
+</div>
+	 </section >
+   <!-- ######################## Section ######################## -->
+      
+      <section class="section_main">
+            
+   <form novalidate name="userForm">
+       <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='FindGadgetOther'"  />
+	   
+      <div class="row">
+		  
+		  
+        <div class="six columns">    
+         <h3>YOUR GADGET</h3>
+	
+ 	 <!-- Check subcategories - Subselect -->
+	
+ 		  <input name="other" type="text" ng-model="main.composeEmail.other"
+             placeholder="Not in the main menu? Name it " id="other" required> 
+   		  <p ng-show="userForm.other.$invalid && userForm.$submitted" class="error">Required!</p>
+	
+ 			<br>
+		 	<label>Budget</label>
+		 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
+		 		         placeholder="Amount or range" required>
+			  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
+			<br>
+
+ 
+ 		  <h3>A BIT MORE INFO</h3>
+ 		 <!-- <label>More about you and what you need the gadget for?</label> -->
+ 	   <textarea name="message" class ="bigarea" ng:model="main.composeEmail.message"
+ 	   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....." required></textarea>
+ 	  <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
+	   
+ 	     </div>
+	  
+	  
+	  
+      <!-- You Section -->
+	  
+	    <div class="six columns">
+			<h3>YOU</h3>
+
+          <!-- Row Layout for forms -->
+           <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="Name " required/>
+		   <p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+
+		  <div class="row">  
+          	<div class="six columns">
+          		<input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+          	</div>
+          	<div class="six columns">
+          		<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+          	</div>
+     	  </div>
+          
+		   <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+           
+           
+     	   <div class="row">  
+     		   	<div class="six columns">
+     	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required/>
+     				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+            	</div>
+            	<div class="six columns">
+      		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+      		 required/>
+      		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+      	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+             </div>
+          </div>
+		  
+            <label>Age</label>
+				
+		  <select  name="age" ng-model="main.composeEmail.age" >
+			    <option value="" ></option>
+			    
+				<option value="Teenager" >Teenager</option>
+				<option value="Twenties">Twenties</option>
+				<option value="Thirties">Thirties</option>
+			     <option value="Fourties" >Fourties</option>
+			     <option value="Fifties">Fifties</option>
+			     <option value="Sixties">Sixties</option>
+				 <option value="Seventies">Seventies</option>
+				 <option value="Eighties">Eighties</option>
+			</select>
+			<br>
+			<br>
+			
+			<label>Profession</label>
+            <input  name="prof" type="text" class="twelve" ng-model="main.composeEmail.prof" 
+			placeholder="E.g. Nurse, Engineer, Journalist ...."  />
+ 		   <!-- <p ng-show="userForm.prof.$invalid && userForm.$submitted" class="error">Required!</p> -->
+            
+			
+			<label>Hobbies</label>
+			  <input name="hobb" type="text" ng-model="main.composeEmail.hobbie"
+		         placeholder="E.g. Blogging, Games, Reading ..." >
+	  		    <!-- <p ng-show="userForm.hobb.$invalid && userForm.$submitted" class="error">Required!</p> -->
+
+  		   <!-- TODO ? <label>Type of User</label>
+		  <select  ng-model="main.composeEmail.userType" > professional , hobbie etc
+  			<br>
+  			<br>	  -->
+				 
+	 
+          
+        </div>
+
+    
+<!--	 Submit button   -->   
+		 <div class="twelve columns">
+        <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"
+	   />
+   		</div>
+	   
+        
+     
+		
+
+      </form>
+        
+        </section>
+        
+		<!-- end section -->
+        

@@ -1,0 +1,202 @@
+<!-- ######################## Header ######################## -->
+
+        
+        <header>
+              <h1 class="welcome_text">Your Perfect Match - Home</h1>    
+        </header>
+
+
+<!-- ######################## Section ######################## -->
+	  <section class="section_light">
+	        <div class="row">
+		  
+		  
+	  	         <div class="twelve columns grey center	">
+			Tehcnology is as well in our house appliances. Are you looking to change your fridge, washing machine, IoT etc? We find the best deal for you.
+	</div>
+	 </section >
+   <!-- ######################## Section ######################## -->
+      
+      <section class="section_main">
+            
+   <form novalidate name="userForm">
+       <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='FindGadgetHome'"  />
+	   
+      <div class="row">
+       
+	   
+	   
+
+	          <div class="six columns">
+			
+			
+	           <!-- Contact Form -->
+         
+	           <h3>YOUR GADGET</h3>
+	
+	   <select  name="gadget" 
+	   ng:init=" main.composeEmail.gadget = main.home[0];" onchange='CheckOther(this);' ng:model="main.composeEmail.gadget" 
+	   		 ng:options="comp as comp for  comp in main.home" required>
+    
+	   </select>
+  	 
+	  		 	    <br><br>
+	     	  <input type="text" ng-model="main.composeEmail.other"
+	              placeholder="Not in the list? Name it " style='display:none;' id="other">
+	  		 <br>
+	  		  <p ng-show="userForm.gadget.$invalid && userForm.$submitted" class="error">Required!</p>
+		
+		
+	           <!-- Row Layout for forms -->
+	         <div class="row">
+	  	    <div class="twelve columns" align="center">
+
+	  	   	 		     <label> Drag and Drop into the green bucket what it is important for you <strong>ordered by preference</strong> 
+	  	   					 <!-- and to the red one what you most like it won't need  -->(This section is optional)</label>
+
+	  	    </div>	 
+ 		   
+	  	    <div class="twelve columns">
+	  	     <ul ui-sortable="main.sortableOptions" ng:model="main.listHome" class="basket-table" style="text-align:center">
+	  	             <li class="bullet-item" ng:repeat="item in main.listHome" >
+	  	   		   {{item}}
+	  	   	   </li>
+
+	  	         </ul>
+	  	    </div>
+		   		 
+	  		   <div class="twelve columns">
+	  			   <!-- <label>
+	  				   Your spec
+				   </label> -->
+			   
+	  		   <ul ui-sortable="main.sortableOptions" ng:init="main.composeEmail.listNeed=[];"  ng:model="main.composeEmail.listNeed" class="bullet-item-basket  need">
+	  		           <li  class="bullet-item " ng:repeat="item in main.composeEmail.listNeed" >
+	  					   {{item}}
+	  				   </li>
+				  
+	  		       </ul>
+			   
+	   	 	<label>Budget</label>
+	   	 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
+	   	 		         placeholder="Amount or range" required>
+	   		  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
+			   
+	  	   </div>
+		   
+	  	   <!-- <div class="six columns">
+	  		   <h3> Not important </h3>
+	  		   <ul ui-sortable="main.sortableOptions" ng:init="main.composeEmail.listNoNeed=[];"  ng:model="main.composeEmail.listNoNeed" class="bullet-item-basket no-need">
+	  		           <li class="bullet-item " ng:repeat="item in main.composeEmail.listNoNeed" >
+	  					   {{item}}
+	  				   </li>
+
+	  		       </ul>
+
+	  		   	</div> -->
+	  		</div>
+			   <!-- 
+	  			   Some people might not be able to know their needs in that technology sense 
+	  			   - try to make it more generic like "listen music a lot" "travel"
+	  			   - blogger
+	
+	             --></div>
+				   
+	   
+	    <div class="six columns">
+          <!-- You Section -->
+          
+          <h3>YOU</h3>
+
+          <!-- Row Layout for forms -->
+           <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="Name " required/>
+		   <p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+
+		  <div class="row">  
+          	<div class="six columns">
+          		<input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+          	</div>
+          	<div class="six columns">
+          		<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+          	</div>
+     	  </div>
+          
+		   <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+           
+   	   <div class="row">  
+   		   	<div class="six columns">
+   	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required/>
+   				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+          	</div>
+          	<div class="six columns">
+    		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+    		 required/>
+    		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+    	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+           </div>
+        </div>
+			  
+            <label>Age</label>
+				
+		  <select  name="age" ng-model="main.composeEmail.age" >
+			    <option value="" ></option>
+			    
+				<option value="Teenager" >Teenager</option>
+				<option value="Twenties">Twenties</option>
+				<option value="Twenties">Thirties</option>
+			     <option value="Fourties" >Fourties</option>
+			     <option value="Fifties">Fifties</option>
+			     <option value="Sixties">Sixties</option>
+				 <option value="Seventies">Seventies</option>
+				 <option value="Eighties">Eighties</option>
+			</select>
+			<br>
+			<br>
+			
+			<label>Profession</label>
+            <input  name="prof" type="text" class="twelve" ng-model="main.composeEmail.prof" 
+			placeholder="E.g. Nurse, Engineer, Journalist ...."  />
+ 		   <!-- <p ng-show="userForm.prof.$invalid && userForm.$submitted" class="error">Required!</p> -->
+            
+			
+			<label>Hobbies</label>
+			  <input name="hobb" type="text" ng-model="main.composeEmail.hobbie"
+		         placeholder="E.g. Blogging, Games, Reading ..." >
+	  		    <!-- <p ng-show="userForm.hobb.$invalid && userForm.$submitted" class="error">Required!</p> -->
+
+  		   <!-- TODO ? <label>Type of User</label>
+		  <select  ng-model="main.composeEmail.userType" > professional , hobbie etc
+  			<br>
+  			<br>	  -->
+				 
+	 	
+		             <!-- <button ng-click="main.addItem()">Add Me</button>
+		         <li ng-repeat="item in main.items" id="item{{item.id}}">
+		             <a href="#">{{item.title}}</a>  <a ng-click="main.deleteItem($index)" class="delete-item">x</a>
+		         </li> -->
+				 
+	
+
+          
+        </div>
+
+	  </div>
+	  
+	  <div class="row">
+		 <div class="twelve columns">  
+			  <h3>A BIT MORE INFO</h3>
+			 <!-- <label>What will you use it for?  Add any other characteristics that you are going to need.</label> -->
+		   <textarea  ng:model="main.composeEmail.message"
+		   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....."></textarea>
+           <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"
+		   />
+		   <!-- ng-disabled="userForm.$invalid" --> 
+         
+        </div>
+      </div>
+         </form>
+        
+        </section>
+        
+		<!-- end section -->
+        
