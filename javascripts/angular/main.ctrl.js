@@ -56,7 +56,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 
 	vm.saveInfo = function(isValid) {
-		alert ('submited: '+ $scope.userForm.submitted);	
+		alert ('submited: '+ $scope);	
 		alert ('Valid: '+ isValid);	
 			if (isValid) {
 						alert('our form is amazing');
