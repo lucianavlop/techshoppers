@@ -56,8 +56,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 
 	vm.saveInfo = function(isValid) {
-		alert ('submited: '+ $scope.userform);	
-		alert ('Valid: '+ isValid);	
+		
 			if (isValid) {
 						alert('our form is amazing');
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
@@ -97,7 +96,10 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
          }
        };
 	
-	
+	vm.setFormScope= function(scope){
+	      this.formScope = scope;
+	};
+
 	// vm.contact = function() {
 	//         $http.post('save.php', JSON.stringify(vm.composeContact)).error(function(status){console.log(status)});
 	//         alert ("Contact: " +  vm.composeContact.name);
