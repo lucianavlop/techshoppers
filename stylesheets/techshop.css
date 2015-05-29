@@ -1,232 +1,347 @@
 
-      
-<!-- ######################## Header ######################## -->
-       <header class="matchC">
-		   <div class="layer">
-              <h1 class="welcome_text" style='color:WHITESMOKE;'>Your Perfect Match - Computing & Phone</h1>
-		  </div>
-        </header>
-		
-		
-		<!-- ######################## Section ######################## -->
-	  <section class="section_light">
-	        <div class="row">
-		  
-		  
-	  	         <div class="twelve columns grey center	">
-			Looking for a new phone or laptop? We do all the hardwork for you and find the one that fits your needs.
-		</div>
-	</div>
-	 </section >
-   <!-- ######################## Section ######################## -->
-      
-      <section class="section_medium_dark">
-            
-          <form novalidate name="userForm">
-           <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='FindGadgetComputing'"  />
-      <div class="row">
-		  
-		  
-	         <div class="six columns">	
-	          <h3>YOUR GADGET</h3>
-		
-	 		 <!-- Check subcategories - Subselect -->
-	 	     <!-- <option value="laptop" selected>Laptop</option>
-	 	     <option value="pc">PC</option>
-	 	     <option value="tablet">Tablet</option>
-	 	     <option value="phone">Phone</option>
-	 	     <option value="Other">Other</option> -->
-	 		 <select name="gadget" ng:init=" main.composeEmail.gadget = main.computing[0];" onchange='CheckOther(this);' ng:model="main.composeEmail.gadget" 
-	 		 ng:options="comp as comp for  comp in main.computing" required>
-		   
-	 		 </select>
-	
-	 		 	    <br><br>
-	    	  <input type="text" ng-model="main.composeEmail.other"
-	             placeholder="Not in the list? Name it " style='display:none;' id="other">
-	   		  <p ng-show="userForm.gadget.$invalid && userForm.$submitted" class="error">Required!</p>
-	
-	 	 <br>
+#imgTable {  height: 100px;  text-align: center; font: 0/0 a;  }
+#imgTable img {   display: inline-block;
+    vertical-align: middle;  height: 60%; width:60% }
 
-	          <!-- Row Layout for forms -->
-	        <div class="row">
-		   
-	 		   <div class="twelve columns" align="center">
+#imgTable:before {    /* create a full-height inline block pseudo=element */
+	    content: ' ';
+	    display: inline-block;
+	    vertical-align: middle;  /* vertical alignment of the inline element */
+	    height: 100%;
+	}
+	
+select{
+      width: 100%;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 1;
+      border: 0;
+      border-radius: 0;
+      height: 34px;
+    	}
+	
+	
+		a.blog{
+			font-size: 20px;
+		}	
+/*
+.basket-table{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.basket-table *{list-style:none;line-height:1}
+.basket-table .bullet-item {
+background-color: #fff;
+padding-right: 10px;
+margin: 0 10px 0 0;
+text-align: center;
+color: #333;
+font-size: 14px;
+font-weight: normal;
+border: solid 1px #ddd;
+display:inline;
+}
+*/
 
+.center {
+			text-align:center;
+}
+	
+.grey-uppercase{
+	 text-transform: uppercase;color:grey;
+}	
+.grey{
+	 color:grey;
+}	
+
+.basket-table ul{
+   margin: 0; padding: 0; 
+   align:center;
+   text-align:center;
+    list-style-type: none; list-style-image: none;
+}
+
+
+.basket-table li 
+{
+	       /* or */ 
+	display: inline-block;
+	padding: 8px;
+	/*color: #333;*/
+	color:whitesmoke;
+	font-size: 12px;
+	    margin: 2px  2px 0 0;
+		border: solid 1px #ddd;
+}
+
+.version{
+	width: auto;
+	background: #2ba6cb;
+	border: 1px solid #1e728c;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	outline: none;
+	padding: 5px 10px 6px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.link {
+	color: #F06B48;
+	
+}
+
+.button{
+	float:right;
+	clear:both;
+}
+
+.error{
+	/*color:#85635a;*/
+	/*color:#FFFF66;*/
+	color:#FFFF66;
+}
+.no-need-item
+{
+	border-left: #856363 solid 10px ;
+	border-right: #856363 solid 10px ;
+	
+}
+.no-need
+{
+	border-bottom: #856363 solid 15px ;
+	border-left: #856363 solid 10px ;
+	border-right: #856363 solid 10px ;
+	border-top-style:none;
+/*	background-color:#856363;*/
+}
+.no-need-full
+{
+	background-color:#856363;
+}
+.bullet-item-basket {
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 3px;
+  font-weight: normal;
+}
+
+.need-item
+{
+	border-left: #A6D785 solid 10px ;
+	border-right: #A6D785 solid 10px ;
+	
+}
+
+.need
+{
+	border-bottom: whitesmoke solid 8px ;
+	border-left: whitesmoke solid 5px ;
+	border-right: whitesmoke solid 5px ;
+	border-top-style:none;
+	/*background-color:#A6D785;*/
+}
+.need-full
+{
+	background-color:#A6D785;
+}
+.lovers
+{
+	color:#A6D785;
+}
+.haters
+{
+	color:red;
+}
+.red
+{
+	color:red;
+}
+
+.bullet-item-basket{/*border:solid 1px #ddd;*/margin-left:0;margin-bottom:20px}
+
+.bullet-item-basket *{list-style:none;line-height:1}
+.bullet-item-basket .title{background-color:#ddd;padding:15px 20px;text-align:center;color:#333;font-weight:bold;font-size:16px}
+.bullet-item-basket .price{background-color:#eee;padding:15px 20px;text-align:center;color:#333;font-weight:normal;font-size:20px}
+.bullet-item-basket .description{background-color:#fff;padding:15px;text-align:center;color:#777;font-size:12px;font-weight:normal;
+	line-height:1.4;border-bottom:dotted 1px #ddd}
+
+.bullet-item-basket .bullet-item{padding:15px;
+		text-align:center;
+		/*color:#333;*/
+		color:whitesmoke;
+		 font-size:14px;font-weight:normal;border-bottom:dotted 1px #ddd}
+		.bullet-item-basket .cta-button{background-color:#f5f5f5;text-align:center;padding:20px}
+		
+		
+textarea.bigarea{
+	height:200px;
+}
+
+.pricing-table .header2-section{
+background-color: WHITESMOKE;
+padding: 15px 20px;
+text-align: center;
+color: #333;
+font-weight: bold;
+font-size: 12px;
+}
+
+
+/*Rating stars
+*/
+i.star {
+	background-image: url(../images/star-sprite.png);
+	display: inline-block;
+	height: 16px;
+	width: 80px;
+/*	background-position-x: -80px;*/
+	background-position-y: -48px;
+}
+
+i.star-1    { background-position-x: -64px; }
+i.star-2    { background-position-x: -48px; }
+i.star-3    { background-position-x: -32px; }
+i.star-4    { background-position-x: -16px; }
+i.star-5    { background-position-x: 0; }
+i.star-qtr  { background-position-y: -32px; }
+i.star-half { background-position-y: -16px; }
+i.star-3qtr { background-position-y: 0; }
+
+/* avatars */
+.lucia {content: url(../images/avatars/lucia.png);
+}
+.jordan {content: url(../images/avatars/jordan.png);}
+.marcos {content: url(../images/avatars/marcos.png);}
+.eva {content: url(../images/avatars/eva.png);}
+.keyboard{ background:url(../images/keyboard.png);
+	background-size: 1500px;
+	position:relative;
+	padding: 50px 10px;
+	height:80px;
+	/*
+  box-shadow: inset 0 0 0 1000px rgba(44,62,80,0.6);*/}
+.startup{ background:url(../images/startup.jpg);
+		background-size: 1400px;
+        position:relative;
+		/*padding: 10px 10px;*/
+		height:250px;
+}
+.matchC{ background:url(../images/home-office.jpg);
+		background-size: 1500px;
+        position:relative;
+		background-position-y: -660px; 
+      /*  top:-20px;*/
+		height:100px;
+}
+.matchS{ background:url(../images/sound.jpg);
+	background-size: 1700px;
+	position:relative;
+	background-position-y: -600px; 
+	background-position-x: -100px; 
+	height:100px;
+}
+.matchCamera{ background:url(../images/canon.jpg);
+	background-size: 1500px;
+	position:relative;
+	background-position-y: -160px;
+	/*background-position-x: -100px;*/
+	height:100px;
+}
+.matchOther{ background:url(../images/wii.jpg);
+	background-size: 300px;
+	position:relative;
+	/*background-position-y: -160px; */
+
+	height:100px;
+}
+.matchW{ background:url(../images/wearable.JPG);
+	background-size: 600px;
+	position:relative;
+	background-position-y: -540px;
+/*	background-position-x: -160px;*/
+
+	height:100px;
+}
+
+.new-old{
+	background:url(../images/new_and_old_light_bulb.jpg);
+	background-size: 150px;
+    position:relative;
+
+	height:100px;
+}
+
+.meeting{
+	background:url(../images/meeting.jpg);
+	background-size: 220px;
+    position:relative;
+
+	height:100px;
+}
+
+.gift{
+	background-size: 500px;
+	background:url(../images/gift.jpg);
+/*	background-size: 100% 100%;*/
+	/*background-position: right;*/
+    position:relative;
+	background-position-y: -500px; 
+
+	height:100px;
+}
+
+
+
+/*.beta{
+	background:url(../images/label_green);
+	background-size: 90px;
+	background-repeat:no-repeat;
+
+}*/
+
+.layer {
+     background-color: rgba(44,62,80,0.6); /*rgba(248, 247, 216, 0.7);*/
+      position: absolute;
 	 
-	            
-	 		     <label> Drag and Drop into the green bucket what it is important for you <strong>ordered by preference</strong> 
-					 <!-- and to the red one what you most like it won't need  -->(this section is optional)</label>
-					 
-					 <br>
-	 		   </div>	 
- 		   
-	 		   <div class="twelve columns">
-   
- 	 
-	 		       <ul ui-sortable="main.sortableOptions" ng:model="main.listComputing" class="basket-table" style="text-align:center">
-	 		               <li class="bullet-item" ng:repeat="item in main.listComputing" >
-	 		    			   {{item}}
-	 		    		   </li>
-	 		           </ul>
-	 		   	   	</div>
-		   		 
-	 		   <div class="twelve columns">
-	 			   <!-- <h3>
-	 				   Your spec
-	 			   </h3> -->
-			   
-	 		   <ul ui-sortable="main.sortableOptions" ng:init="main.composeEmail.listNeed=[];" 
-	 		   ng:model="main.composeEmail.listNeed" class="bullet-item-basket  need">
-	 		           <li  class="bullet-item" ng:repeat="item in main.composeEmail.listNeed" >
-	 					   {{item}}
-	 				   </li>
-				  
-	 		       </ul>
-			   
-			   
-	 	   </div>
-	 	   <!-- <div class="six columns">
-	 		   <h3> Not important </h3>
-	 		   <ul ui-sortable="main.sortableOptions"  ng:init="main.composeEmail.listNoNeed=[];" ng:model="main.composeEmail.listNoNeed" class="bullet-item-basket  no-need">
-	 		           <li class="bullet-item" ng:repeat="item in main.composeEmail.listNoNeed" >
-	 					   {{item}}
-	 				   </li>
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .layer-color {
+        background-color: rgba(44,62,80,0.4);/* rgba(44,62,80,0.6); rgba(248, 247, 216, 0.7);*/
 
-	 		       </ul>
+    }
+/*Gradient*/
 
-	 		   	</div> -->
-	 	
-	 		   <!-- 
-	 			   Some people might not be able to know their needs in that technology sense 
-	 			   - try to make it more generic like "listen music a lot" "travel"
-	 			   - blogger
+
+.form-background: rgb(37,141,200); /* Old browsers */
+.form-background: -moz-linear-gradient(top,  rgba(37,141,200,1) 0%, rgba(37,141,200,1) 100%); /* FF3.6+ */
+.form-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(37,141,200,1)), color-stop(100%,rgba(37,141,200,1))); /* Chrome,Safari4+ */
+.form-background: -webkit-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Chrome10+,Safari5.1+ */
+.form-background: -o-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Opera 11.10+ */
+.form-background: -ms-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* IE10+ */
+.form-background: linear-gradient(to bottom,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+background: rgb(63,76,107); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(63,76,107,1) 37%, rgba(63,76,107,1) 67%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(63,76,107,1)), color-stop(67%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(63,76,107,1) 37%,rgba(63,76,107,1) 67%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(63,76,107,1) 37%,rgba(63,76,107,1) 67%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(63,76,107,1) 37%,rgba(63,76,107,1) 67%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(63,76,107,1) 37%,rgba(63,76,107,1) 67%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+
+
 	
-	            --></div>
-		  
-  	 	<label>Budget</label>
-  	 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
-  	 		         placeholder="Amount or range" required>
-  		  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
-  			</div>
-		  
-        <div class="six columns">
-
-          
-          <!-- You Section -->
-          
-          <h3>YOU</h3>
-
-          <!-- Row Layout for forms -->
-           <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="Name " required/>
-		   <p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
-
-		  <div class="row">  
-          	<div class="six columns">
-          		<input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
-          	</div>
-          	<div class="six columns">
-          		<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
-          	</div>
-     	  </div>
-          
-		   <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
-           
-           
-     	   <div class="row">  
-     		   	<div class="six columns">
-     	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required/>
-     				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
-            	</div>
-            	<div class="six columns">
-      		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
-      		 required/>
-      		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
-      	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
-             </div>
-          </div>
-		  
-				 
-            <label>Age</label>
-				
-		  <select  name="age" ng-model="main.composeEmail.age" >
-			    <option value="" ></option>
-			    
-				<option value="Teenager" >Teenager</option>
-				<option value="Twenties">Twenties</option>
-				<option value="Thirties">Thirties</option>
-			     <option value="Fourties" >Fourties</option>
-			     <option value="Fifties">Fifties</option>
-			     <option value="Sixties">Sixties</option>
-				 <option value="Seventies">Seventies</option>
-				 <option value="Eighties">Eighties</option>
-			</select>
-			<br>
-			<br>
-			
-			<label>Profession</label>
-            <input  name="prof" type="text" class="twelve" ng-model="main.composeEmail.prof" 
-			placeholder="E.g. Nurse, Engineer, Journalist ...."  />
- 		   <!-- <p ng-show="userForm.prof.$invalid && userForm.$submitted" class="error">Required!</p> -->
-            
-			
-			<label>Hobbies</label>
-			  <input name="hobb" type="text" ng-model="main.composeEmail.hobbie"
-		         placeholder="E.g. Blogging, Games, Reading ..." >
-	  		    <!-- <p ng-show="userForm.hobb.$invalid && userForm.$submitted" class="error">Required!</p> -->
-
-  		   <!-- TODO ? <label>Type of User</label>
-		  <select  ng-model="main.composeEmail.userType" > professional , hobbie etc
-  			<br>
-  			<br>	  -->
-				 
-	 	
-					
-		             <!-- <button ng-click="main.addItem()">Add Me</button>
-		         <li ng-repeat="item in main.items" id="item{{item.id}}">
-		             <a href="#">{{item.title}}</a>  <a ng-click="main.deleteItem($index)" class="delete-item">x</a>
-		         </li> -->
-				 
-			<!-- <select>
-			    <option value="volvo">Reading</option>
-			     <option value="saab">Gaming</option>
-			     <option value="mercedes">Blogger</option>
-			     <option>
-			</select> -->
-      
-           
-			
-			<!-- <div class="row">
-              <div class="six columns">
-                <input type="text" placeholder="City" />
-              </div>
-              <div class="three columns">
-                <input type="text" placeholder="State" />
-              </div>
-              <div class="three columns">
-                <input type="text" placeholder="ZIP" />
-              </div>
-            </div> -->
-          
-        </div>
-
-     	  </div>
-	  
-	  <div class="row">
-		 <div class="twelve columns">  
-			  <h3>A BIT MORE INFO</h3>
-			 <!-- <label>What will you use it for?  Add any other characteristics that you are going to need.</label> -->
-		   <textarea  ng:model="main.composeEmail.message"
-		   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....."></textarea>
-           <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"
-		   />
-		   <!-- ng-disabled="userForm.$invalid" --> 
-         
-        </div>
-      </div>
-         </form>
-        
-        </section>
-        
-		<!-- end section -->
-        
