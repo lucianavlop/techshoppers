@@ -5,7 +5,7 @@
 	 $data = file_get_contents("php://input");
 	 
 	 
-	 $filename=  $_ENV["$OPENSHIFT_DATA_DIR"].'storage'.time().'.txt';
+	 $filename=  getenv['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
 	 
 	  error_log("Filename:".$filename , 0);
 	  
