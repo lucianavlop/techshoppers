@@ -5,7 +5,7 @@
 	 $data = file_get_contents("php://input");
 	 
 	 
-	 $filename=  $_ENV['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
+	 $filename=  $_ENV["$OPENSHIFT_DATA_DIR"].'storage'.time().'.txt';
 	 
 	  error_log("Filename:".$filename , 0);
 	  
@@ -44,6 +44,7 @@
      fclose($myfile);
 	 
 	
+	$subject = 'Your tech Shoppers';
 	 // make sure you get these SMTP settings right
 	 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl") 
 	     ->setUsername('lucianavlop@gmail.com')
