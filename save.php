@@ -42,13 +42,29 @@
 	 echo 'success'; //So it gets send as data - otherwise goes to the error page
 	 
 	 
+
+	 // make sure you get these SMTP settings right
+	 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl") 
+	     ->setUsername('lucianavlop@gmail.com')
+	     ->setPassword('navaza46n');
+
+	 $mailer = Swift_Mailer::newInstance($transport);
+	 // the message itself
+	 $message = Swift_Message::newInstance('email subject')
+	     ->setFrom(array('hello@example.com' => 'no reply'))
+	     ->setTo(array('hello@example.com'))
+	     ->setBody("email body");
+
+	 $result = $mailer->send($message);
+	 
+	 
 	
-     $to      = 'lucianavlop@gmail.com';
-  	$subject = 'Premium Shopping';
-  	$headers = 'From: technologyshoppers@example.com' . "\r\n" .
-  	    'Reply-To: technologyshoppers@example.com' . "\r\n" .
-  	    'X-Mailer: PHP/' . phpversion();
- 
-  	mail($to, $subject,  $body  , $headers);
+   	//     $to      = 'lucianavlop@gmail.com';
+  	// $subject = 'Premium Shopping';
+  	// $headers = 'From: hello@yourtechshoppers.com' . "\r\n" .
+  	//     'Reply-To: hello@yourtechshoppers.com' . "\r\n" .
+  	//     'X-Mailer: PHP/' . phpversion();
+  	//
+  	// mail($to, $subject,  $body  , $headers);
 
 ?>
