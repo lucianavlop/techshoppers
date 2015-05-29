@@ -105,7 +105,8 @@ display:inline;
 	clear:both;
 }
 .superbold{
-	font-weight: 900;
+	font-size: 16px ;
+	font-weight: bold
 }
 
 .error{
