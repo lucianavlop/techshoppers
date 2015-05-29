@@ -121,8 +121,14 @@ h4{
 .section_light {background: #FFF; border-top: 1px dotted #999; border-bottom: 1px dotted #999; padding: 20px 0; clear:both}
 .section_light h1 {text-align: center; border-bottom: 1px dotted #999; padding-bottom: 20px; margin: 0 0 20px 0}
 
+.section_medium_dark { background-color: #778899; padding: 20px 0 40px}
+.section_medium_dark h3 {color: #F5F5F5; margin: 0 0 20px 0; font-size: 18px;}
+.section_medium_dark label {color: #F5F5F5; }
+
+
 .section_dark {background: #262626; border-top: 0; border-bottom: 1px dotted #999; padding: 20px 0 40px}
 .section_dark h2 {color: #999999; margin: 0 0 20px 0; font-size: 22px; text-align: center}
+
 
 .section_main {padding: 20px 0}
 .section_main h2 {padding: 0 0 20px}
