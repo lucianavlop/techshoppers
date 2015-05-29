@@ -234,28 +234,28 @@ i.star-3qtr { background-position-y: 0; }
       /*  top:-20px;*/
 		height:100px;
 }
-.matchS{ background:url(../images/sound);
+.matchS{ background:url(../images/sound.jpg);
 	background-size: 1700px;
 	position:relative;
 	background-position-y: -600px; 
 	background-position-x: -100px; 
 	height:100px;
 }
-.matchCamera{ background:url(../images/canon);
+.matchCamera{ background:url(../images/canon.jpg);
 	background-size: 1500px;
 	position:relative;
 	background-position-y: -160px;
 	/*background-position-x: -100px;*/
 	height:100px;
 }
-.matchOther{ background:url(../images/wii);
+.matchOther{ background:url(../images/wii.jpg);
 	background-size: 300px;
 	position:relative;
 	/*background-position-y: -160px; */
 
 	height:100px;
 }
-.matchW{ background:url(../images/wearable);
+.matchW{ background:url(../images/wearable.JPG);
 	background-size: 600px;
 	position:relative;
 	background-position-y: -540px;
@@ -265,7 +265,7 @@ i.star-3qtr { background-position-y: 0; }
 }
 
 .new-old{
-	background:url(../images/new_and_old_light_bulb);
+	background:url(../images/new_and_old_light_bulb.jpg);
 	background-size: 150px;
     position:relative;
 
@@ -273,7 +273,7 @@ i.star-3qtr { background-position-y: 0; }
 }
 
 .meeting{
-	background:url(../images/meeting);
+	background:url(../images/meeting.jpg);
 	background-size: 220px;
     position:relative;
 
@@ -282,7 +282,7 @@ i.star-3qtr { background-position-y: 0; }
 
 .gift{
 	background-size: 500px;
-	background:url(../images/gift);
+	background:url(../images/gift.jpg);
 /*	background-size: 100% 100%;*/
 	/*background-position: right;*/
     position:relative;
