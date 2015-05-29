@@ -4,8 +4,8 @@
      
 	 $data = file_get_contents("php://input");
 	 
-	 
-	 $filename=  getenv['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
+	 $data_store=getenv['$OPENSHIFT_DATA_DIR'];
+	 $filename=  $data_store.'storage'.time().'.txt';
 	 
 	  error_log("Filename:".$filename , 0);
 	  
@@ -53,7 +53,7 @@
 	 $mailer = Swift_Mailer::newInstance($transport);
 	 // the message itself
 	 $message = Swift_Message::newInstance($subject)
-	     ->setFrom(array('hello@example.com' => 'no reply'))
+	     ->setFrom(array('hello@example.com' => $json['section']))
 	     ->setTo(array('lucianavlop@gmail.com'))
 	     ->setBody($body);
 
