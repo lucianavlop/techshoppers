@@ -104,6 +104,9 @@ display:inline;
 	float:right;
 	clear:both;
 }
+.superbold{
+	font-weight: 900;
+}
 
 .error{
 	/*color:#85635a;*/
