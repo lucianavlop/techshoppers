@@ -223,11 +223,11 @@ i.star-half { background-position-y: -16px; }
 i.star-3qtr { background-position-y: 0; }
 
 /* avatars */
-.lucia {content: url(../images/avatars/lucia.png);
+.lucia {content: url(../images/avatars/lucia.png);max-width:250px;
 }
-.jordan {content: url(../images/avatars/jordan.png);}
-.marcos {content: url(../images/avatars/marcos.png);}
-.eva {content: url(../images/avatars/eva.png);}
+.jordan {content: url(../images/avatars/jordan.png);max-width:250px;}
+.marcos {content: url(../images/avatars/marcos.png);max-width:250px;}
+.eva {content: url(../images/avatars/eva.png);max-width:250px;}
 .keyboard{ background:url(../images/keyboard.png);
 	background-size: 1500px;
 	position:relative;
