@@ -5,8 +5,10 @@
 	 $data = file_get_contents("php://input");
 	 
 	 
-	 $filename= $_ENV['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
+	 $filename=  $_ENV['$OPENSHIFT_DATA_DIR'].'storage'.time().'.txt';
 	 
+	  error_log("Filename:".$filename , 0);
+	  
      $myfile = fopen($filename, "a+") or die("Unable to open file!");
      $json = json_decode($data, true) ;
 	 
@@ -41,10 +43,7 @@
 	 fwrite($myfile, $body);
      fclose($myfile);
 	 
-	 echo 'success'; //So it gets send as data - otherwise goes to the error page
-	 
-	 
-
+	
 	 // make sure you get these SMTP settings right
 	 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl") 
 	     ->setUsername('lucianavlop@gmail.com')
@@ -52,13 +51,15 @@
 
 	 $mailer = Swift_Mailer::newInstance($transport);
 	 // the message itself
-	 $message = Swift_Message::newInstance('email subject')
-	     ->setFrom(array('hello@yourtechshoppers.com' => $subject))
-	     ->setTo(array('lucianavlop@hotmail.com'))
+	 $message = Swift_Message::newInstance($subject)
+	     ->setFrom(array('hello@example.com' => 'no reply'))
+	     ->setTo(array('lucianavlop@gmail.com'))
 	     ->setBody($body);
 
 	 $result = $mailer->send($message);
 	 
+	 
+	 echo 'success'; //So it gets send as data - otherwise goes to the error page
 	 
 	
    	//     $to      = 'lucianavlop@gmail.com';
