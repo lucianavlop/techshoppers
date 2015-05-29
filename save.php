@@ -1,4 +1,6 @@
 <?php
+
+     require_once 'swiftmailer/lib/swift_required.php';
      
 	 $data = file_get_contents("php://input");
 	 
