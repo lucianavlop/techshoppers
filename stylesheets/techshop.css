@@ -250,10 +250,10 @@ i.star-3qtr { background-position-y: 0; }
 		height:100px;
 }
 .matchS{ background:url(../images/sound.jpg);
-	background-size: 1600px;
+	background-size: 180px ;
 	position:relative;
-	background-position-y: -600px; 
-	background-position-x: -100px; 
+	/*background-position-y: -600px;*/
+	/*background-position-x: -100px;*/
 	height:100px;
 }
 .matchCamera{ background:url(../images/canon.jpg);
