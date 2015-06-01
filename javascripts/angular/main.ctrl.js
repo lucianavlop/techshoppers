@@ -63,7 +63,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
  						.success(
 							function(data, status) {
-								// alert ('Data:' + data);
+								 alert ('Data:' + data);
 							      if (data == 'success') {
  									  window.location = '#/success'
 								  }else{
@@ -76,7 +76,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		}else{
        	 		
 				$scope.userForm.submitted=true;
-				// alert('Form incorrect');
+				alert('Form incorrect');
 				
 		}
 		 
