@@ -17,8 +17,12 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.wearable = [
 	     'Activity trackers',
 	    // 'Washing Watches',
-	    'Wearable Cameras','Smart Glasses','Smart Watches',
-	      'Healthcare Devices','Gesture Control','Other'
+	    'Wearable Cameras',
+		//'Smart Glasses'
+		,'Smart Watches',
+	      'Healthcare Devices'
+		,'Gesture Control'
+		,'Other'
 	];
 	
 	vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'Subwoofers', 'Wireless Speakers', 'MP3/4', 'Other'
@@ -70,7 +74,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 							  }
  						)
  						;
-						alert ("Thanks : " +  vm.composeEmail.name); 
+						// alert ("Thanks : " +  vm.composeEmail.name);
 		}else{
        	 		
 				$scope.userForm.submitted=true;
