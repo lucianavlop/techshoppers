@@ -34,13 +34,11 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Phasion"
   , "Multimedia", "Easy Use", "Brand"];
-	vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness"
-  , "Easy Use", "Brand"];
-	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design"
-  ,  "Easy Use", "Brand", "Phasion"];
-  vm.listSound = ["Bluethoot","Bass", "Design", "Power" , "Brand"];
-	vm.listHome = ["Design", "Power"
-  , "Brand", "Energy rating"];
+  	vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
+ 	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
+  	
+	vm.listSound = ["Bluethoot","Bass", "Design", "Power" , "Brand"];
+  	vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
   
 	vm.composeEmail.listNeed = [];
 	vm.composeEmail.listNoNeed = [];
@@ -233,8 +231,6 @@ techshop.directive('match', function($parse) {
 			   var firstEmail =  attrs.match; 
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
 		      }, function(currentValue) {
-		  		// alert(currentValue);
-		
 		        ctrl.$setValidity('mismatch', currentValue);
 		      });
     }
