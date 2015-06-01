@@ -43,7 +43,6 @@
 	 fwrite($myfile, $body);
      fclose($myfile);
 	 
-	 echo 'success'; //So it gets send as data - otherwise goes to the error page
 	
 	
 	$subject = 'Your tech Shoppers';
@@ -62,6 +61,7 @@
 	 $result = $mailer->send($message);
 	 
 	 
+	 echo 'success'; //So it gets send as data - otherwise goes to the error page
 	 
 	
    	//     $to      = 'lucianavlop@gmail.com';
