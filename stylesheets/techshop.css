@@ -249,7 +249,7 @@ i.star-3qtr { background-position-y: 0; }
 		height:100px;
 }
 .matchS{ background:url(../images/sound.jpg);
-	background-size: 1700px;
+	background-size: 1600px;
 	position:relative;
 	background-position-y: -600px; 
 	background-position-x: -100px; 
@@ -265,7 +265,7 @@ i.star-3qtr { background-position-y: 0; }
 .matchOther{ background:url(../images/wii.jpg);
 	background-size: 300px;
 	position:relative;
-	/*background-position-y: -160px; */
+	background-position-y: -20px; 
 
 	height:100px;
 }
@@ -274,6 +274,16 @@ i.star-3qtr { background-position-y: 0; }
 	position:relative;
 	background-position-y: -540px;
 /*	background-position-x: -160px;*/
+
+	height:100px;
+}
+
+
+.matchH{
+	background:url(../images/living-room.jpg);
+	background-size: 1300px;
+	background-position-y: -250px;
+    position:relative;
 
 	height:100px;
 }
@@ -295,17 +305,16 @@ i.star-3qtr { background-position-y: 0; }
 }
 
 .gift{
-	background-size: 500px;
-	background:url(../images/gift.jpg);
+/*	background-size: 100px;
+*/	background:url(../images/gift.jpg);
 /*	background-size: 100% 100%;*/
+	background-size: 100%;
 	/*background-position: right;*/
     position:relative;
-	background-position-y: -500px; 
+	background-position-y: -350px; 
 
 	height:100px;
 }
-
-
 
 /*.beta{
 	background:url(../images/label_green);
