@@ -18,12 +18,12 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	     'Activity trackers',
 	    'Wearable Cameras',
 		'Smart Watches',
-	      'Healthcare Devices'
-		,'Gesture Control'
-		,'Other'
+	     'Healthcare Devices',
+		'Gesture Control',
+		'Other'
 	];
 	
-	vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'Subwoofers', 'Wireless Speakers', 'MP3/4', 'Other'
+	vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'
 	];
 	
 	vm.home = [
@@ -40,8 +40,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
   
 	vm.composeEmail.listNeed = [];
 	vm.composeEmail.listNoNeed = [];
-	// vm.composeEmail.gadget = {};
-	
+
 	
 	vm.sortableOptions= {
 	    update: function(e, ui) {
