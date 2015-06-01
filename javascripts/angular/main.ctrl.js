@@ -16,10 +16,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	];
 	vm.wearable = [
 	     'Activity trackers',
-	    // 'Washing Watches',
 	    'Wearable Cameras',
-		//'Smart Glasses'
-		,'Smart Watches',
+		'Smart Watches',
 	      'Healthcare Devices'
 		,'Gesture Control'
 		,'Other'
