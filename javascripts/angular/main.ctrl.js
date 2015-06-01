@@ -31,7 +31,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	];
 	
 	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Phasion"
-  , "Multimedia", "Easy Use", "Brand"];
+  	, "Multimedia", "Easy Use", "Brand"];
   	vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
   	
@@ -57,12 +57,10 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.saveInfo = function(isValid) {
 		
 			if (isValid) {
-						alert('our form is amazing');
-				        $http.post('save.php', JSON.stringify(vm.composeEmail))
+					  $http.post('save.php', JSON.stringify(vm.composeEmail))
  						.success(
 							function(data, status) {
-								 alert ('Data:' + data);
-							      if (data == 'success') {
+								  if (data == 'success') {
  									  window.location = '#/success'
 								  }else{
 								  	  window.location = '#/error'
@@ -70,12 +68,11 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 							  }
  						)
  						;
-						 alert ("Thanks : " +  vm.composeEmail.name);
+						
 		}else{
        	 		
 				$scope.userForm.submitted=true;
-				alert('Form incorrect');
-				
+			
 		}
 		 
 		 
