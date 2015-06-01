@@ -43,6 +43,8 @@
 	 fwrite($myfile, $body);
      fclose($myfile);
 	 
+	 echo 'success'; //So it gets send as data - otherwise goes to the error page
+	
 	
 	$subject = 'Your tech Shoppers';
 	 // make sure you get these SMTP settings right
@@ -53,14 +55,13 @@
 	 $mailer = Swift_Mailer::newInstance($transport);
 	 // the message itself
 	 $message = Swift_Message::newInstance($subject)
-	     ->setFrom(array('hello@example.com' => $json['section']))
+	     ->setFrom(array('info@yourtechshoppers.com' => $json['section']))
 	     ->setTo(array('lucianavlop@gmail.com'))
 	     ->setBody($body);
 
 	 $result = $mailer->send($message);
 	 
 	 
-	 echo 'success'; //So it gets send as data - otherwise goes to the error page
 	 
 	
    	//     $to      = 'lucianavlop@gmail.com';
