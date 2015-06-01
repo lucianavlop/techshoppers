@@ -34,8 +34,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
   , "Easy Use", "Brand"];
 	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design"
   ,  "Easy Use", "Brand", "Phasion"];
-	vm.listSound = ["Bluethoot","Bass", "Design", "Brand", "Power"
-  , "Brand"];
+  vm.listSound = ["Bluethoot","Bass", "Design", "Power" , "Brand"];
 	vm.listHome = ["Design", "Power"
   , "Brand", "Energy rating"];
   
@@ -230,7 +229,7 @@ techshop.directive('match', function($parse) {
 			   var firstEmail =  attrs.match; 
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
 		      }, function(currentValue) {
-		  		alert(currentValue);
+		  		// alert(currentValue);
 		
 		        ctrl.$setValidity('mismatch', currentValue);
 		      });
