@@ -4,7 +4,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	
     var vm = this;
-    vm.form = {};
+    $scope.form = {};
 	
 	vm.title = 'Example';
 	vm.composeEmail = {};
@@ -57,7 +57,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 
 	vm.saveInfo = function(isValid) {
-		alert('form :' + isValid  + vm.form.userform );
+		alert('form :' + isValid  + vm.form.userform + $scope.form.userform);
 		if (isValid) {
 						alert('our form is amazing');
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
