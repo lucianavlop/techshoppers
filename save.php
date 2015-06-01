@@ -7,7 +7,7 @@
 	 $data_store= getenv('OPENSHIFT_DATA_DIR');
 	 $filename=  $data_store.'storage'.time().'.txt';
 	 
-	 info_log("Filename:".$filename , 0);
+	 error_log("Filename:".$filename , 0);
 	  
      $myfile = fopen($filename, "a+") or die("Unable to open file!");
      $json = json_decode($data, true) ;
