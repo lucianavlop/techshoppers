@@ -28,13 +28,13 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
     'Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'
 	];
 	
-	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
+	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Phasion"
   , "Multimedia", "Easy Use", "Brand"];
 	vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness"
   , "Easy Use", "Brand"];
-	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness"
+	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design"
   ,  "Easy Use", "Brand", "Phasion"];
-	vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power"
+	vm.listSound = ["Bluethoot","Bass", "Design", "Brand", "Power"
   , "Brand"];
 	vm.listHome = ["Design", "Power"
   , "Brand", "Energy rating"];
@@ -58,11 +58,11 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.saveInfo = function(isValid) {
 		
 			if (isValid) {
-						alert('our form is amazing');
+						// alert('our form is amazing');
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
  						.success(
 							function(data, status) {
-								alert ('Data:' + data);
+								// alert ('Data:' + data);
 							      if (data == 'success') {
  									  window.location = '#/success'
 								  }else{
@@ -75,7 +75,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		}else{
        	 		
 				$scope.userForm.submitted=true;
-				alert('Form incorrect');
+				// alert('Form incorrect');
 				
 		}
 		 
@@ -226,11 +226,12 @@ techshop.directive('match', function($parse) {
   return {
     require: 'ngModel',
     link: function(scope, elem, attrs, ctrl) {
-		
 		scope.$watch(function() {       
 			   var firstEmail =  attrs.match; 
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
 		      }, function(currentValue) {
+		  		alert(currentValue);
+		
 		        ctrl.$setValidity('mismatch', currentValue);
 		      });
     }
