@@ -2,6 +2,7 @@ var techshop= angular.module('app', ['ui.sortable','ngRoute']);
 
 var control= techshop.controller("MainController", function($http, $scope, $location){
 	
+	$scope.form = {};
 	
     var vm = this;
     
@@ -74,7 +75,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 						 alert ("Thanks : " +  vm.composeEmail.name);
 		}else{
        	 		
-				$scope.userForm.submitted=true;
+				$scope.form.userForm.submitted=true;
 				alert('Form incorrect');
 				
 		}
