@@ -102,6 +102,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	$scope.setFormScope= function(scope){
 		 // alert ("setting form: " + scope)
 	      $scope.userForm = scope;
+		  vm.composeEmail = {};
 	};
 
 	// vm.contact = function() {
