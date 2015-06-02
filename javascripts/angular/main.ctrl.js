@@ -2,7 +2,7 @@ var techshop= angular.module('app', ['ui.sortable','ngRoute']);
 
 var control= techshop.controller("MainController", function($http, $scope, $location){
 	
-	$scope.userform = {};
+	// $scope.form = {};
 	
 	
     var vm = this;
@@ -100,7 +100,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
        };
 	
 	vm.setFormScope= function(scope){
-	      this.formScope = scope;
+	      this.userForm = scope;
 	};
 
 	// vm.contact = function() {
