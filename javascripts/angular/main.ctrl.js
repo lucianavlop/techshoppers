@@ -2,10 +2,12 @@ var techshop= angular.module('app', ['ui.sortable','ngRoute']);
 
 var control= techshop.controller("MainController", function($http, $scope, $location){
 	
-	$scope.form = {};
+	
 	
     var vm = this;
     
+	vm.form = {};
+	
 	vm.title = 'Example';
 	vm.composeEmail = {};
 	vm.composeContact = {};
@@ -57,7 +59,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 
 	vm.saveInfo = function(isValid) {
-		alert('form :' + isValid  + $scope.form.userForm.submitted);
+		alert('form :' + isValid  + vm.form.userForm.submitted);
 		if (isValid) {
 						alert('our form is amazing');
 				        $http.post('save.php', JSON.stringify(vm.composeEmail))
@@ -75,7 +77,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 						 alert ("Thanks : " +  vm.composeEmail.name);
 		}else{
        	 		
-				$scope.form.userForm.submitted=true;
+				vm.form.userForm.submitted=true;
 				alert('Form incorrect');
 				
 		}
