@@ -232,9 +232,9 @@ techshop.directive('match', function($parse) {
     link: function(scope, elem, attrs, ctrl) {
 		scope.$watch(function() {       
 			   var firstEmail =  attrs.match; 
-			   alert("FirstEmail:" + firstEmail);
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
 		      }, function(currentValue) {
+				   alert("Current:" + currentValue);
 		        ctrl.$setValidity('mismatch', currentValue);
 		      });
     }
