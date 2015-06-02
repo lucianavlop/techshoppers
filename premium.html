@@ -50,7 +50,7 @@
               <h3>How can we help? </h3>
   			<br>
   		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
-  	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
+  	     <p ng-show="form.userForm.message.$invalid && form.userForm.$submitted" class="error">Required!</p>
 		    </div>
 		  
 		  
@@ -61,7 +61,7 @@
            <h3>You</h3>
            <br>
    		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
-   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+   		<p ng-show="form.userForm.name.$invalid && form.userForm.$submitted" class="error">Required!</p>
 		
 	   <div class="row">  
          <div class="six columns">
@@ -71,7 +71,7 @@
          <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
          </div>
     	</div>
-		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+		 <p ng-show="form.userForm.city.$invalid && form.userForm.$submitted" class="error">Required!</p>
 		
  	   <div class="row">  
  		   	<div class="six columns">
@@ -84,7 +84,7 @@
   		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
   		 required/>
   		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
-  	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+  	   <p ng-show="form.userForm.emailConfirm.$error.mismatch && form.userForm.$submitted" class="error">Emails do NOT match</p>
            	</div>
       	  </div>
 		  
