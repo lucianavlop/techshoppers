@@ -100,7 +100,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
        };
 	
 	vm.setFormScope= function(scope){
-	      this.userForm = scope;
+		
+	      vm.userForm = scope;
 	};
 
 	// vm.contact = function() {
