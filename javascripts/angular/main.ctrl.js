@@ -234,7 +234,6 @@ techshop.directive('match', function($parse) {
 			   var firstEmail =  attrs.match; 
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
 		      }, function(currentValue) {
-				   alert("Current:" + currentValue);
 		        ctrl.$setValidity('mismatch', currentValue);
 		      });
     }
