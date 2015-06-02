@@ -99,9 +99,9 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
          }
        };
 	
-	vm.setFormScope= function(scope){
+	$scope.setFormScope= function(scope){
 		 alert ("setting form: " + scope)
-	      vm.userForm = scope;
+	      $scope.userForm = scope;
 	};
 
 	// vm.contact = function() {
