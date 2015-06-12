@@ -58,7 +58,7 @@
 	 		   <div class="twelve columns">
    
  	 
-	 		       <ul ui-sortable="main.sortableOptions" ng:model="main.listComputing" class="basket-table" style="text-align:center">
+	 		       <ul ui-sortable="main.sortableOptions" ng:init="main.loadBasket()" ng:model="main.listComputing" class="basket-table" style="text-align:center">
 	 		               <li class="bullet-item" ng:repeat="item in main.listComputing" >
 	 		    			   {{item}}
 	 		    		   </li>

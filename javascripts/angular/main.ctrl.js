@@ -46,6 +46,15 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.composeEmail.listNoNeed = [];
 	// vm.composeEmail.gadget = {};
 	
+	vm.loadBasket=function(){
+		
+		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
+	  , "Multimedia", "Easy Use", "Brand"];
+	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
+	  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Phasion"];
+	   vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power", "Brand"];
+		vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
+	}
 	
 	vm.sortableOptions= {
 	    update: function(e, ui) {
@@ -57,6 +66,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 	};
 
+    
 
 	vm.saveInfo = function(isValid) {
 		alert('form :' + isValid  + $scope.userForm + ' '+ vm.composeEmail.email + ' '+ vm.composeEmail.name);

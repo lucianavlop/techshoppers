@@ -50,7 +50,7 @@
 			   </div>	 
  		   
 			   <div class="twelve columns">
-			     <ul ui-sortable="main.sortableOptions" ng:model="main.listSound" class="basket-table" style="text-align:center">
+			     <ul ui-sortable="main.sortableOptions" ng:init="main.loadBasket()" ng:model="main.listSound" class="basket-table" style="text-align:center">
 			             <li class="bullet-item" ng:repeat="item in main.listSound" >
 			  			   {{item}}
 			  		   </li>
@@ -61,8 +61,8 @@
 				   <!-- <h3>
 					   Your spec
 				   </h3> -->
-			   <!-- ng:init="main.composeEmail.listNeed=[];" -->
-			   <ul ui-sortable="main.sortableOptions"   ng:model="main.composeEmail.listNeed" class="bullet-item-basket need">
+			   
+			   <ul ui-sortable="main.sortableOptions" ng:init="main.composeEmail.listNeed=[];"  ng:model="main.composeEmail.listNeed" class="bullet-item-basket need">
 			           <li  class="bullet-item" ng:repeat="item in main.composeEmail.listNeed" >
 						   {{item}}
 					   </li>
