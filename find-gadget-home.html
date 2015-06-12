@@ -123,8 +123,9 @@
            
    	   <div class="row">  
    		   	<div class="six columns">
-   	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required/>
-   				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error" autocomplete="off">Your email is incorrect</p>
+   	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required
+			   autocomplete="off"/>
+   				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error" >Your email is incorrect</p>
           	</div>
           	<div class="six columns">
     		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
@@ -139,7 +140,7 @@
 		  <select  name="age" ng-model="main.composeEmail.age" >
 			    <option value="" ></option>
 			    
-				<option value="Teenager" >Teenager</option>
+				<!-- <option value="Teenager" >Teenager</option> -->
 				<option value="Twenties">Twenties</option>
 				<option value="Twenties">Thirties</option>
 			     <option value="Fourties" >Fourties</option>

@@ -13,7 +13,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.composeContact = {};
 		
 	
-	vm.computing = ['Laptop', 'PC', 'Tablet', 'Phone', 'Other'];
+	vm.computing = ['Laptop', 'PC', 'Tablet', 'Smartphone', 'Other'];
 	
 	vm.photo = [
 	  'Digital Camera', 'Other'
@@ -27,7 +27,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		,'Other'
 	];
 	
-	vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'
+	vm.sound = [ 'PC Speakers','Wireless Speakers','Earbuds','Headphones','Home Cinema Speakers', 'MP3/4', 'Other'
 	];
 	
 	vm.home = [
