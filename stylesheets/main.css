@@ -135,8 +135,8 @@ h4{
 
 /* END Frontpage sections */
 
-/* supersize 40 if not in mobile devices tehcnology does not fit and  messes up the layout */
-.heading_supersize {font-size: 40px; text-align:center; font-weight: normal; line-height: 70px; margin:0 0 10px; color: #212121}
+
+.heading_supersize {font-size: 50px; text-align:center; font-weight: normal; line-height: 70px; margin:0 0 10px; color: #212121}
 .heading_largesize {font-size: 34px; text-align:; font-weight: normal}
 
 .dropcap_red, 

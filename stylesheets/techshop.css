@@ -63,6 +63,7 @@ display:inline;
 }
 
 
+
 .basket-table li 
 {
 	       /* or */ 
@@ -104,10 +105,6 @@ display:inline;
 .button{
 	float:right;
 	clear:both;
-}
-.superbold{
-	font-size: 16px ;
-	font-weight: bold
 }
 
 .error{
@@ -224,11 +221,11 @@ i.star-half { background-position-y: -16px; }
 i.star-3qtr { background-position-y: 0; }
 
 /* avatars */
-.lucia {content: url(../images/avatars/lucia.png);max-width:250px;
+.lucia {content: url(../images/avatars/lucia.png);
 }
-.jordan {content: url(../images/avatars/jordan.png);max-width:250px;}
-.marcos {content: url(../images/avatars/marcos.png);max-width:250px;}
-.eva {content: url(../images/avatars/eva.png);max-width:250px;}
+.jordan {content: url(../images/avatars/jordan.png);}
+.marcos {content: url(../images/avatars/marcos.png);}
+.eva {content: url(../images/avatars/eva.png);}
 .keyboard{ background:url(../images/keyboard.png);
 	background-size: 1500px;
 	position:relative;
@@ -249,8 +246,8 @@ i.star-3qtr { background-position-y: 0; }
       /*  top:-20px;*/
 		height:100px;
 }
-.matchS{ background:url(../images/sound.jpg);
-	background-size: 180px ;
+.matchS{ background:url(../images/sound1.jpg);
+	background-size: 150px ;
 	position:relative;
 	/*background-position-y: -600px;*/
 	/*background-position-x: -100px;*/
@@ -316,6 +313,8 @@ i.star-3qtr { background-position-y: 0; }
 
 	height:100px;
 }
+
+
 
 /*.beta{
 	background:url(../images/label_green);

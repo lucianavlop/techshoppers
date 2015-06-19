@@ -2,45 +2,38 @@ var techshop= angular.module('app', ['ui.sortable','ngRoute']);
 
 var control= techshop.controller("MainController", function($http, $scope, $location){
 	
-	// $scope.form = {};
-	
 	
     var vm = this;
-    
-	
-	vm.title = 'Example';
+    vm.title = 'Example';
 	vm.composeEmail = {};
 	vm.composeContact = {};
 		
 	
-	vm.computing = ['Laptop', 'PC', 'Tablet', 'Smartphone', 'Other'];
+	vm.computing = ['Laptop', 'PC', 'Tablet', 'Phone', 'Other'];
 	
 	vm.photo = [
 	  'Digital Camera', 'Other'
 	];
 	vm.wearable = [
 	     'Activity trackers',
+	  
 	    'Wearable Cameras',
 		'Smart Watches',
-	      'Healthcare Devices'
-		,'Gesture Control'
-		,'Other'
+	      'Healthcare Devices',
+		'Gesture Control',
+		'Other'
 	];
 	
-	vm.sound = [ 'PC Speakers','Wireless Speakers','Earbuds','Headphones','Home Cinema Speakers', 'MP3/4', 'Other'
-	];
-	
-	vm.home = [
-    'Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'
-	];
-	
-	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Phasion"
-  	, "Multimedia", "Easy Use", "Brand"];
-  	vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
- 	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
-  	
-	vm.listSound = ["Bluethoot","Bass", "Design", "Power" , "Brand"];
-  	vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
+	vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'];
+	vm.home = ['Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'];
+	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
+  , "Multimedia", "Easy Use", "Brand"];
+    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
+  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Phasion"];
+   vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power", "Brand"];
+  
+   vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
+	// vm.listHomeBasic = ["Design", "Power", "Brand", "Energy rating"];
   
 	vm.composeEmail.listNeed = [];
 	vm.composeEmail.listNoNeed = [];
@@ -48,6 +41,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	vm.loadBasket=function(){
 		
+		vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'];
+		vm.home = ['Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'];
 		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
 	  , "Multimedia", "Easy Use", "Brand"];
 	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
@@ -59,23 +54,19 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	vm.sortableOptions= {
 	    update: function(e, ui) {
 	                      },
-	           receive: function(e, ui) {
+	    receive: function(e, ui) {
 
-	           },
-	           connectWith: ".bullet-item-basket , .basket-table" //-- Commented out because was moving as well the coloured lis
+	    },
+	   connectWith: ".bullet-item-basket , .basket-table" //-- Commented out because was moving as well the coloured lis
 
 	};
 
-    
 
 	vm.saveInfo = function(isValid) {
-		//alert('form :' + isValid  + $scope.userForm + ' '+ vm.composeEmail.email + ' '+ vm.composeEmail.name);
 		if (isValid) {
-						//alert('our form is amazing');
-				        $http.post('save.php', JSON.stringify(vm.composeEmail))
+						 $http.post('save.php', JSON.stringify(vm.composeEmail))
  						.success(
 							function(data, status) {
-								// alert ('Data:' + data);
 							      if (data == 'success') {
  									  window.location = '#/success'
 								  }else{
@@ -84,11 +75,10 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 							  }
  						)
  						;
-						// alert ("Thanks : " +  vm.composeEmail.name);
-		}else{
+			}else{
        	 		
 				$scope.userForm.submitted=true;
-				//alert('Form incorrect');
+				
 				
 		}
 		 
@@ -109,12 +99,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
          }
        };
 	
-	$scope.setFormScope= function(scope){
-		 // alert ("setting form: " + scope)
-	      $scope.userForm = scope;
-		  $scope.composeEmail={};
-		  	};
-
+	
 	// vm.contact = function() {
 	//         $http.post('save.php', JSON.stringify(vm.composeContact)).error(function(status){console.log(status)});
 	//         alert ("Contact: " +  vm.composeContact.name);
@@ -241,6 +226,7 @@ techshop.directive('match', function($parse) {
   return {
     require: 'ngModel',
     link: function(scope, elem, attrs, ctrl) {
+		
 		scope.$watch(function() {       
 			   var firstEmail =  attrs.match; 
 			    return elem.val()===angular.element(document.getElementById(firstEmail)).val();
@@ -251,7 +237,7 @@ techshop.directive('match', function($parse) {
   };
 });
 
-//Directive to allow autofill and not be half filled
+//Directive to allow autofill and not be half filled -- set autocomplete in emails to autocomplete off as I couldn't make this work
 // techshop.directive('formAutofillFix', function() {
 //   return function(scope, elem, attrs) {
 // 	 // Fixes Chrome bug: https://groups.google.com/forum/#!topic/angular/6NlucSskQjY
@@ -270,6 +256,7 @@ techshop.directive('match', function($parse) {
 //     }
 //   };
 // });
+
 
 
 
