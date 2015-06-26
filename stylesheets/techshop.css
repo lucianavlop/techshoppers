@@ -220,6 +220,10 @@ i.star-qtr  { background-position-y: -32px; }
 i.star-half { background-position-y: -16px; }
 i.star-3qtr { background-position-y: 0; }
 
+.logo {
+	content: url(../images/logoBlue.png); align:bottom; width:25px;
+}
+
 /* avatars */
 .lucia {content: url(../images/avatars/lucia.png
 ); max-width:300px;
