@@ -46,7 +46,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
 	  , "Multimedia", "Easy Use", "Brand"];
 	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
-	  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Phasion"];
+	  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Fashion"];
 	   vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power", "Brand"];
 		vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
 	}
