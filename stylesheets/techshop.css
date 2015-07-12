@@ -12,7 +12,7 @@
 	
 select{
       width: 100%;
-      padding: 20px;
+       padding: 0px;/* Bigger than 0 it does not work propertly in firefox*/
       font-size: 16px;
       line-height: 1;
       border: 0;
