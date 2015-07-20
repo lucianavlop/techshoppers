@@ -5,7 +5,7 @@
         
         <header class="new-old">
 			<div class="layer">
-              <h1 class="welcome_text" style="color:WHITESMOKE;">We find the solution for you! <!-- (find a nice picture that reflects the use case for the background) --></h1>    
+              <h1 class="welcome_text" style="color:WHITESMOKE;">{{ 'EXISTS1' | translate }} <!-- (find a nice picture that reflects the use case for the background) --></h1>    
            </div>
 	    </header>
      
@@ -21,18 +21,19 @@
 			<!-- Contact with your Personal Shoppers -  -->Does this Product Exist?
 				
 			</h4>
-			<p class=" grey">
-		 	Are you wondering if a specific product or tech solution  exists? <br> Are you trying to improve  your day to day or how your business works?
-		   <br><br>
-		 	 <strong>Describe</strong> what you trying to solve,  <strong>we research</strong> the solution for you, maybe you think it is not possible but we might find the way to make it reality.
-              
-			  <br>We focus in solving necessities for you or your business <strong>to make your life easier</strong>. Sometimes the solution is closer and cheaper than you think  
-		   <br> 
-		    Your crazy gadgets search go  in this category too!
-		 <!-- We find hidden treasures for you or advice you and what you should us to solve a specific problem
-			 -->
-			</p>
-		    </div>
+   			<p class=" grey">
+   		 	{{ 'EXISTS2' | translate }} <br>{{ 'EXISTS3' | translate }}
+   		   <br><br>
+   		 	 <strong>{{ 'EXISTS4' | translate }}</strong> {{ 'EXISTS5' | translate }}
+              <strong>   {{ 'EXISTS6' | translate }}</strong> {{ 'EXISTS7' | translate }}
+   			  <br>{{ 'EXISTS8' | translate }}
+   		   <br> 
+		  
+   		  {{ 'EXISTS9' | translate }}
+   		 <!-- We find hidden treasures for you or advice you and what you should us to solve a specific problem
+   			 -->
+   			</p>
+   		    </div>
         
         
         </div>
@@ -48,7 +49,7 @@
 	    
 		
 		  <div class="six columns">
-            <h3>What is the problem that you need to solve? </h3>
+            <h3>{{ 'EXISTS10' | translate }}</h3>
 			<br>
 			<textarea  name ="message"  class ="bigarea" ng-model="main.composeEmail.message" placeholder="Describe what are you trying to achieve..." 	required ></textarea>
 	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -58,7 +59,7 @@
 		  
         <div class="six columns">
           <!-- Row Layout for forms -->  
-        <h3>You</h3>
+        <h3>{{ 'YOU' | translate }}</h3>
         <br>
 		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
 		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -97,7 +98,7 @@
 	<div class="row">
 
         <div class="twelve columns">
-	   <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+	   <input type="submit" value="{{ 'SUBMIT1' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
        
         </div>
 	</div>

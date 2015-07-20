@@ -15,7 +15,11 @@
 	 			 <div class ="twelve columns"  >
 					<br>
               	<h1 class="heading_supersize" style="color:WHITESMOKE;">TECHNOLOGY SHOPPERS</h1>
-		  	 	<h2 class="welcome_text" style="color:WHITESMOKE">We find the perfect product for you! </h2>
+   		  	 <h2 class="welcome_text" style="color:WHITESMOKE">{{ 'MAIN' | translate }}</h2>
+   				 <br>
+   	 			<p align="center" style="color:#F06B48">
+   	 				 <a href="#/" ng-click="main.changeLanguage('es')"> Español </a> |  <a href="#/" ng-click="main.changeLanguage('en')"> English </a>
+   	 			</p>
 		    	 <br>
 				</div>
 			</div>
@@ -30,15 +34,14 @@
         
 		<div class ="twelve columns">
 			
-		<h4  class"center grey-uppercase">Your Technology Personal Shoppers</h4>
-		<p   class="center grey">
-		Are you looking for your new technology purchase? <br>Do you need the help of an expert or mainly want us to do all the research for you? 
-		<br> <!-- This is your site.  -->
-		
-		 We focus on your needs, there are a lot of options out there.... Let's find the one suitable for you at the best price.
-		<br>
-		Tailored, personalised search. Check the sections below and ask us advice. For a limited period  <strong>IT'S FREE !!!</strong>
-	</p></div>
+				<h4  class"center grey-uppercase">{{ 'MAIN2' | translate }} </h4>
+			<p  class="center grey">
+				{{ 'TITLE1' | translate }} <br>
+				{{ 'TITLE2' | translate }}<br>
+				{{ 'TITLE3' | translate }}<br>
+				{{ 'TITLE4' | translate }} <b> {{ 'TITLE5' | translate }}</b><br>
+	
+		</p></div>
 </div>
       <div class="row"  style="background:white;
   border: solid 1px #e6e6e6;">
@@ -52,7 +55,7 @@
 					  <!-- dropcap_black -->
 					  <i class="fi-laptop"></i>
 					  <br>
-					 Computing & Phone
+					 {{ 'COMPUTING' | translate }}
 				 	</a>
 		 		
 				 </h3>
@@ -65,7 +68,7 @@
 			  <a href="#/sound" class="link"> <!--<span class=" lsf-icon-dropcap" title="music"></span> -->
 				  <i class="fi-music"></i>
 				  <br>
-	 		 Sound
+	 		 {{ 'SOUND' | translate }}
 	 		 </a></h3>
 	      <!-- <p>Speakers, Home Theather, MP3s , etc . We have specialist that look for you the best for your budget</p> -->
 	    </div>
@@ -75,7 +78,7 @@
 			   <h3><!-- <span class=" lsf-icon-dropcap" title="camera"></span> -->
 		   <i class="fi-camera"></i>
 		   <br>
-	 			Photo
+	 			{{ 'PHOTO' | translate }}
 	 			</a>
 	 		</h3>
 	          <!-- <p>
@@ -88,8 +91,8 @@
 		    <a href="#/home"  class="link">
          <h3>  <i class="fi-home"></i>
 			 <br>
-			 <!-- <span class=" lsf-icon-dropcap" title="home"></span> -->
-			House
+		 <!-- <span class=" lsf-icon-dropcap" title="home"></span> -->
+		 {{ 'HOUSE' | translate }}
 			 </a></h3>
          <!-- <p> Tehcnology is as well in our house appliances. Are you looking to change your fridge, washing machine, IoT..? We find the best deal for you</p>
        --> </div>
@@ -99,7 +102,7 @@
 					<i class="fi-male"></i>
 					<!-- <span class=" lsf-icon-dropcap" title="walking"></span> -->
 					<br>
-				Wearable Technology
+								 {{ 'WEARABLE' | translate }}
 				</a></h3>
             <!-- <p><!-- Data will not help you if you can’t see it when you need it.  
 				</p> -->
@@ -109,7 +112,7 @@
 				<i class="fi-magnifying-glass"></i>
 				<!-- <span class=" lsf-icon-dropcap" title="search"></span> -->
 				<br>
-				Other
+				 {{ 'OTHER' | translate }}
 				</a></h3>
             <!-- <p> The gadget that you are looking for is not here? Please let us know what it is...We try to get it for you, as <em>crazy</em> as it might sound like</p> -->
           </div>
@@ -125,7 +128,7 @@
    
         <div class="row"> 
       
-        <h2>Gadget of the Week  - MPOWERD Luci Inflatable Solar Lantern</h2>
+        <h2>{{ 'GADGETWEEK' | translate }}   - MPOWERD Luci Inflatable Solar Lantern</h2>
         ￼  <div class="twelve columns">
   		  <p class="gadget_month">   
   			The FESTIVAL SEASON is here  and we want to show one of the best an useful gadgets for your outdoor adventures. This gadget will brighten your camping nights
@@ -135,7 +138,7 @@
   			<br><br>
   			Fully waterproof and shatterproof, with a built-in rechargeable battery, these lanterns are a must have for any night gathering or camping adventure
   			<br>
-  			and one of the best things is the price :)
+  			and one of the best things is the price!
   			<br> 
 			
 	  	
@@ -226,7 +229,7 @@
 
  <section class="section_main">
 
-      <h2 style="text-align:center">Examples</h2>
+      <h2 style="text-align:center">{{ 'EX' | translate }}</h2>
 
       <div class="row">
 

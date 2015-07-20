@@ -5,7 +5,7 @@
         
         <header class="meeting">
 			<div class="layer">
-              <h1 class="welcome_text" style="color:WHITESMOKE;">Premium Shopping Experience</h1>    
+              <h1 class="welcome_text" style="color:WHITESMOKE;">{{ 'PREM1' | translate }}</h1>     
        	   </div>
 	    </header>
         
@@ -16,17 +16,12 @@
         <div class="row">
         
          <div class="twelve columns" >
-            <h4><!-- span class="dropcap_black lsf-icon-dropcap" title="crown"></span>
-			  Contact with your Personal Shopper - --> Premium
-				
-				</h4>
-				<p class="grey">
-				 Technology makes your life easier but sometimes is dificult to find the right solution.
-				 <!-- with the amount of offer out there -->
-				 <br><br>
-				 Do you need our dedicated personal assistance? Do you have a big decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need .
-				</p>
-				
+		<p class="grey">
+		{{ 'PREM2' | translate }}
+		 <!-- with the amount of offer out there -->
+		 <br><br>
+		{{ 'PREM3' | translate }}
+		</p>
 			
 		</div>
         
@@ -47,7 +42,7 @@
 		  
 		  
   		  <div class="six columns">
-              <h3>How can we help? </h3>
+               <h3>{{ 'PREM4' | translate }}</h3>
   			<br>
   		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
   	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -58,7 +53,7 @@
         <div class="six columns">
           <!-- Row Layout for forms -->
           
-           <h3>You</h3>
+            <h3>{{ 'YOU' | translate }}</h3>
            <br>
    		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
    		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -105,7 +100,7 @@
 	<div class="row">
 
         <div class="twelve columns">
-	   <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+	   <input type="submit" value="{{'SUBMIT3' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
        
         </div>
 	</div>

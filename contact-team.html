@@ -16,7 +16,7 @@
 			
           <!-- Row Layout for forms -->
    
-           <h3>Contact</h3>
+           <h3>{{ 'CONTACT1' | translate }}</h3>
            <br>
    		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
    		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -46,7 +46,7 @@
     
 		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
         <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
-   	   <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+   	   <input type="submit" value="{{ 'CONTACT' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
 	 	 
 		 <br>
 		 <br>
@@ -114,7 +114,7 @@
 	 	<div class="row"> 
 	 	 <div class="twelve columns">
 	
-				 <h3 style="color:WHITESMOKE;"> The Team</h3>
+				 <!-- <h3 align="center">{{ 'TEAM' | translate }}</h3> -->
 				 <br>
 			
 	 			  
