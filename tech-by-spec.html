@@ -82,7 +82,7 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
   		  <div class="six columns">
               <h3>{{ 'GADGETSPEC' | translate }}</h3>
   			<br>
-  			<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
+  			<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{ 'MESSAGE' | translate }}" required></textarea>
   		   	<p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
 		  </div>
 		  
@@ -91,15 +91,15 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
            <h3>{{ 'YOU' | translate }}</h3>
 		   
            <br>
-   		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
+   		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }}" required />
    		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
 		
 	   <div class="row">  
         <div class="six columns">
-       <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+       <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="{{ 'CITY' | translate }}"  required/>
         </div>
         <div class="six columns">
-        <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+        <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }}" required/>
         </div>
    	 	</div>
 	    <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>

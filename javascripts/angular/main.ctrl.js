@@ -204,6 +204,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  'CITY': 'City, Town',
 	  'COUNTRY': 'Country',
 	  'AMOUNT': 'Amount or range',
+	   'AMOUNT': 'Message',
 	  
 	  'AGE': 'Age',
 	  'PROF': 'Profession',
@@ -290,6 +291,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  'CITY': 'Ciudad',
 	  'COUNTRY': 'País',
 	  'AMOUNT': 'Cantidad o rango',
+	  'MESSAGE': 'Mensaje',
 	  
 	  
 	    'REQUIRED': 'Obligatorio',

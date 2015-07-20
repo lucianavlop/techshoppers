@@ -67,15 +67,15 @@
           
             <h3>{{ 'YOU' | translate }}</h3>
             <br>
-			<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
+			<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }}" required />
 			<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
 			
    		   <div class="row">  
              <div class="six columns">
-            <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+            <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="{{ 'CITY' | translate }}"  required/>
              </div>
              <div class="six columns">
-             <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+             <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }}" required/>
              </div>
         	</div>
 	 	   <div class="row">  
