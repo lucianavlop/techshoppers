@@ -30,7 +30,7 @@
 		  
 		         <div class="six columns">
    
-		          <h3>YOUR GADGET</h3>
+		          <h3>{{ 'YOUR' | translate }}  GADGET</h3>
 			 <!-- Check subcategories - Subselect -->
 		 		 <select name="gadget" 
 		 			 ng:init=" main.composeEmail.gadget = main.photo[0];" onchange='CheckOther(this);' ng:model="main.composeEmail.gadget" 
@@ -90,7 +90,7 @@
 				
 		 		</div>
 		
-	 	<label>Budget</label>
+	 	<label>{{ 'BUDGET' | translate }} </label>
 	 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
 	 		         placeholder="amount or range" required>
 		  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -108,7 +108,7 @@
 					   
 					   
         <div class="six columns">     
-          <h3>YOU</h3>
+          <h3>{{ 'YOU' | translate }} </h3>
 
           <!-- Row Layout for forms -->
            <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="Name " required/>
@@ -182,7 +182,7 @@
 	  
 	  <div class="row">
 		 <div class="twelve columns">  
-			  <h3>A BIT MORE INFO</h3>
+			  <h3>{{ 'MOREINFO' | translate }}</h3>
 			 <label>What will you use it for?  Add any other characteristics that you are going to need.</label>
 		   <textarea  ng:model="main.composeEmail.message"
 		   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....."></textarea>

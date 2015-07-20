@@ -309,12 +309,12 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	   'SUBMIT3':'Contactar',
 	 
 	 //PERFECT MATCH
-	  'PMLAPTOP':' Buscas un nuevo ordenador o smartphone ? Dinos lo que nesitas, estamos aquí para ayudarte.',
-	   'PMSOUND':' Altavoces, cascos ...nos puedes preguntar lo que quieras a cerca de música y sonido. Tenemos especialistas que buscan lo mejor adaptado cualquier tipo bolsillo.',
+	  'PMLAPTOP':' Buscas un nuevo ordenador o smartphone ? Dinos lo que buscas, estamos aquí para ayudarte.',
+	   'PMSOUND':' Altavoces, cascos ...nos puedes preguntar lo que quieras a cerca de música y sonido. Tenemos especialistas que buscan lo mejor adaptado a cualquier tipo bolsillo.',
 	 'PMPHOTO':' Estás buscando una cámara digital? Buscamos la mejor cámara que se adapte a tus necesidades.',
-	  'PMHOUSE':'La tecnología está también en nuestra case. Buscas cambiar tu frigorífico, lavadora, etc? Buscamos la mejor oferta para ti. ',
+	  'PMHOUSE':'La tecnología está también en nuestro hogar. Buscas cambiar tu frigorífico, lavadora, etc? Buscamos la mejor oferta para ti. ',
 	 
-	  'PMWEARABLE':' Buscas un nuevo monitor de actividad o un gadget que marque tendencia? Dinos lo que necesitas.',
+	  'PMWEARABLE':' Buscas un nuevo monitor de actividad o un gadget que marque tendencia? Dinos lo que buscas.',
 	  'PMOTHER':'Lo que estás buscando no aparece en el menú? Dinos lo que buscas...Intentamos encontrarlo aunque parezca imposible.',
 	   // Exists
 	  
