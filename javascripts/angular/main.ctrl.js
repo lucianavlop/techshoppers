@@ -100,6 +100,11 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
        };
 	
 	
+   	vm.changeLanguage= function(key){
+   		// alert(key);
+   		  $translate.use(key);
+   	};
+	
 	// vm.contact = function() {
 	//         $http.post('save.php', JSON.stringify(vm.composeContact)).error(function(status){console.log(status)});
 	//         alert ("Contact: " +  vm.composeContact.name);
