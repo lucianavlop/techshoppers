@@ -43,7 +43,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		
 		vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'];
 		vm.home = ['Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'];
-		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
+		vm.listComputing = ["{{ 'BUDGET' | translate }} ", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
 	  , "Multimedia", "Easy Use", "Brand"];
 	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
 	  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Fashion"];
