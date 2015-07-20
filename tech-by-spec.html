@@ -14,7 +14,7 @@ radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24
 radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
 radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
 background-size:100px 50px;"> -->
-              <h1 class="welcome_text" style="color:white">Get only the best!</h1>    
+              <h1 class="welcome_text" style="color:white">{{ 'SPEC1' | translate }}</h1>    
 		  </div>
         </header>
 <!-- ######################## Section ######################## -->
@@ -25,13 +25,15 @@ background-size:100px 50px;"> -->
         
          <div class="twelve columns" >
            <!-- <span class="dropcap_black lsf-icon-dropcap" title="memo" style="text-align:center"></span> -->
-				  <h4>Technology  By Specifications</h4>
-				 <p class=" grey">
-				  Do you  already know the specifications  that you want for your next gadget   but don't have time  to research? We will find the best ones for you at the best price.
-				  <br>
-				  <br>
-				  Or do you already have a gadget in mind? Tell us which one and we let you know if it is a good choice and advice you with others that you could get at the same price.
-			  </p>
+	            <!-- <span class="dropcap_black lsf-icon-dropcap" title="memo" style="text-align:center"></span> -->
+	 				  <h4>{{ 'SPEC2' | translate }}</h4>
+	 				 <p class=" grey">
+	 				{{ 'SPEC3' | translate }}
+	 				  <br>
+	 				  <br>
+	 				 {{ 'SPEC4' | translate }}
+	 			  </p>
+				
 				
 				
 			
@@ -78,7 +80,7 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
 		  
 		  
   		  <div class="six columns">
-              <h3>Gadget Spec</h3>
+              <h3>{{ 'GADGETSPEC' | translate }}</h3>
   			<br>
   			<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
   		   	<p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -86,7 +88,7 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
 		  
 		  
         <div class="six columns">       
-           <h3>You</h3>
+           <h3>{{ 'YOU' | translate }}</h3>
 		   
            <br>
    		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
@@ -116,24 +118,14 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
  	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
           	</div>
      	  </div>
-		    <!-- <div class="row">
-              <div class="six columns">
-                <input ng-model="main.composeEmail.name" type="text" placeholder="City" />
-              </div>
-              <div class="three columns">
-                <input type="text" placeholder="State" />
-              </div>
-              <div class="three columns">
-                <input type="text" placeholder="ZIP" />
-              </div>
-            </div> -->
+		
 		 </div>
 		 
 	</div>
 	<div class="row">
 
         <div class="twelve columns">
-	   <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+	   <input type="submit" value="{{ 'SUBMIT1' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
         </div>
 	</div>
          </form>

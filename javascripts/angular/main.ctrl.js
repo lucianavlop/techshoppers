@@ -273,7 +273,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	   'TITLE5': "ES GRATIS !!!",
     'FOO': 'This is a paragraph',
 	  'SOUND':'Sonido',
-	  'PHOTO':'Foto',
+	  'PHOTO':'Fotografía',
 	  'COMPUTING':'Ordenadores y Telefonía',
 	  'OTHER':'Otros',
 	  'WEARABLE':'Tecnología ponible',
