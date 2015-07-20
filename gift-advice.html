@@ -5,7 +5,7 @@
         
         <header class="gift">
 			<div class="layer">
-              <h1 class="welcome_text" style=" color:WHITESMOKE;"> Gift the best in tech!</h1>    
+               <h1 class="welcome_text" style=" color:WHITESMOKE;"> {{ 'GIFT1' | translate }}</h1>    
 		  </div>
 		</header>
      
@@ -17,23 +17,22 @@
         <div class="row">
         
          <div class="twelve columns">
-			  <h4><!-- <span class="dropcap_black lsf-icon-dropcap" title="present"></span>
-				  Contact with your Personal Shopper - --> Gift Advice
-				  
-			</h4>
+	 			  <!-- <h4> {{ 'GIFT2' | translate }}
+
+	 			</h4> -->
 			
 			
-	       <p class="grey">
+	 	       <p class="grey">
 				
-				Are you not really into technology but you would like to gift somebody an special tech gift? We are here to help!
-				<br><br>
-				We find for you an original  gadget to gift. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.
-				<br><br>
-				You just need to describe the person that you want to surprise and we do all the hard work to  find the perfect present at the perfect price :) 
-				<!-- <br><br>
-				Please don't forget to tell us what she/he already has.  -->
+	 				{{ 'GIFT3' | translate }}
+	 				<br><br>
+	 				{{ 'GIFT4' | translate }}
+	 				<br><br>
+	 				{{ 'GIFT5' | translate }}
+	 				<!-- <br><br>
+	 				Please don't forget to tell us what she/he already has.  -->
 				
-		</p>
+	 		</p>
         	
             </div>
         </div>
@@ -49,13 +48,13 @@
 	  <div class="row">
 		 
 		  <div class="six columns">
-              <h3> How would you like to surprise him/her? </h3>
+              <h3> {{ 'GIFT6' | translate }}</h3>
   			<br>
   			<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Tell us a bit about that special person and how would you like to surprise her/him." required></textarea>
   		     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
           
 		  <!-- <br> -->
-   			<h3>Budget</h3>
+   			<h3>{{ 'BUDGET' | translate }}</h3>
    			  <input name="budget" type="text" ng-model="main.composeEmail.budget" 
    		         placeholder="Budget for the present :) " required>
   		<p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -66,7 +65,7 @@
         <div class="six columns">
           <!-- Row Layout for forms -->
           
-            <h3>You</h3>
+            <h3>{{ 'YOU' | translate }}</h3>
             <br>
 			<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
 			<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
@@ -115,7 +114,7 @@
 	<div class="row">
 
         <div class="twelve columns">
-	   <input type="submit" value="Submit" class="button success"    ng-click="main.saveInfo(userForm.$valid)"/> 
+	   <input type="submit" value="{{ 'SUBMIT2' | translate }}" class="button success"    ng-click="main.saveInfo(userForm.$valid)"/> 
        
         </div>
 	</div>

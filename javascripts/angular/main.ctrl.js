@@ -1,4 +1,4 @@
-var techshop= angular.module('app', ['ui.sortable','ngRoute','pascalprecht.translate', 'ngLocale']]);
+var techshop= angular.module('app', ['ui.sortable','ngRoute','pascalprecht.translate', 'ngLocale']);
 
 var control= techshop.controller("MainController", function($http, $scope, $location, $locale, $translate){
 	
