@@ -199,12 +199,13 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  'SUBMIT3':'Contact',
 	  'BUDGET':'Budget',
 	  
+	  
 	    'REQUIRED': 'REQUIRED',
 	  'NAME': 'Name',
 	  'CITY': 'City, Town',
 	  'COUNTRY': 'Country',
 	  'AMOUNT': 'Amount or range',
-	   'AMOUNT': 'Message',
+	   'MESSAGE': 'Message',
 	  
 	  'AGE': 'Age',
 	  'PROF': 'Profession',
