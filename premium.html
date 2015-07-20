@@ -44,7 +44,7 @@
   		  <div class="six columns">
                <h3>{{ 'PREM4' | translate }}</h3>
   			<br>
-  		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder=" 'MESSAGE': 'Message'," required></textarea>
+  		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{ 'MESSAGE' | translate }}" required></textarea>
   	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
 		    </div>
 		  
