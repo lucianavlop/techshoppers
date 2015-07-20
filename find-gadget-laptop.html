@@ -142,7 +142,7 @@
           </div>
 		  
 				 
-            <label>Age</label>
+            <label>{{ 'AGE' | translate }} </label>
 				
 		  <select  name="age" ng-model="main.composeEmail.age" >
 			    <option value="" ></option>
@@ -159,13 +159,13 @@
 			<br>
 			<br>
 			
-			<label>Profession</label>
+			<label>{{ 'PROF' | translate }} </label>
             <input  name="prof" type="text" class="twelve" ng-model="main.composeEmail.prof" 
 			placeholder="E.g. Nurse, Engineer, Journalist ...."  />
  		   <!-- <p ng-show="userForm.prof.$invalid && userForm.$submitted" class="error">Required!</p> -->
             
 			
-			<label>Hobbies</label>
+			<label>{{ 'HOB' | translate }} </label>
 			  <input name="hobb" type="text" ng-model="main.composeEmail.hobbie"
 		         placeholder="E.g. Blogging, Games, Reading ..." >
 	  		    <!-- <p ng-show="userForm.hobb.$invalid && userForm.$submitted" class="error">Required!</p> -->
@@ -209,7 +209,7 @@
 	  
 	  <div class="row">
 		 <div class="twelve columns">  
-			  <h3>A BIT MORE INFO</h3>
+			  <h3>{{ 'MOREINFO' | translate }} </h3>
 			 <!-- <label>What will you use it for?  Add any other characteristics that you are going to need.</label> -->
 		   <textarea  ng:model="main.composeEmail.message"
 		   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....."></textarea>
