@@ -210,6 +210,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'SUBMIT2':'Find Perfect Gift',
   	  'SUBMIT3':'Contact',
   	  'SUBMITPM':'Find Perfect Match',
+		
 	  'SUBMITED':' Cool!! Submitted',
 		'SUCCESS': 'You have succesfully submited your query. You are a bit closer to your desire gadget/solution.',
 		'SUCCESS1': 'We will send you an e-mail with a link to get the results very soon ',
@@ -427,7 +428,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'SUBMITED':' Gracias por contactarnos!!',
 		'SUCCESS': 'Ya tenemos la información que necesitamos. Estás un paso más cerca de tu deseado gadget/producto.',
   	  	'SUCCESS1': 'Le mandaremos un e-mail con un link a los resultados pronto. ',
-		'SUCCESS1': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en buscar y encontrar el gadget que te mereces al mejor precio. Esperamos que sea menos ',
+		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en buscar y encontrar el gadget que te mereces al mejor precio. Esperamos que sea menos. ',
 		
 		'NOSUBMITED':' Lo sentimos!!',
 		'SORRY': '	Su informacion no ha sido tramitada correctamente.',
