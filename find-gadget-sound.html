@@ -2,7 +2,7 @@
 <!-- ######################## Header ######################## -->
        <header class="matchS">
 		   <div class="layer">
-              <h1 class="welcome_text" style='color:WHITESMOKE;font-size:25px;'>Your Perfect Match - Sound</h1>
+              <h1 class="welcome_text" style='color:WHITESMOKE;font-size:25px;'>{{ 'YOURL' | translate }} Perfect Match - {{ 'SOUND' | translate }}</h1>
 			  <h1  class="welcome_text" style='color:WHITESMOKE;font-size:14px;'> “Without music life would be a mistake." ~Friedrich Nietzsche </h1>
 			  
 		  </div>
@@ -32,16 +32,18 @@
 	
 	    	 <select name="gadget" 
 			 ng:init=" main.composeEmail.gadget = main.sound[0];" onchange='CheckOther(this);' ng:model="main.composeEmail.gadget" 
-			 		 ng:options="comp as comp for  comp in main.sound" required>
+			 		 ng:options="comp | translate for  comp in main.sound" required>
 			 </select>
  	 
 			 	    <br><br>
 	   	  <input type="text" ng-model="main.composeEmail.other"
-	            placeholder="Not in the list? Name it " style='display:none;' id="other">
-		     <p  ng-show="userForm.gadget.$invalid && userForm.$submitted" class="error">Required!</p>
+	            placeholder="{{ 'OTHEREG' | translate }} " style='display:none;' id="other">
+		     <p  ng-show="userForm.gadget.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		 
 			 <br>
 
+ <div ng-switch on="main.language">
+     <div ng-switch-when="en">
 	         <!-- Row Layout for forms -->
 	       <div class="row">
 	  
@@ -73,22 +75,18 @@
 			   
 			   
 		   </div>
-		   <!-- <div class="six columns">
-			   <h3> Not important	 </h3>
-			   <ul ui-sortable="main.sortableOptions" ng:init="main.composeEmail.listNoNeed=[];"  ng:model="main.composeEmail.listNoNeed" class="bullet-item-basket no-need">
-			           <li class="bullet-item" ng:repeat="item in main.composeEmail.listNoNeed" >
-						   {{item}}
-					   </li>
-
-			       </ul>
-
-			   	</div> -->
 			</div>
-		
+	     </div>
+	     <div ng-switch-default>
+	         <!-- IN SPanish this section is not displayed-->
+			
+	     </div>
+	 </div>
+	 		
 	 	<label>{{ 'BUDGET' | translate }} </label>
 	 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
-	 		         placeholder="Amount or range" required>
-		  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">Required!</p>
+	 		         placeholder="{{ 'BUDGET' | translate }}" required>
+		  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		
 			   <!-- 
 				   Some people might not be able to know their needs in that technology sense 
@@ -106,30 +104,30 @@
           <h3>{{ 'YOU' | translate }} </h3>
 
           <!-- Row Layout for forms -->
-           <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="Name " required/>
-		   <p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+           <input  name="name"  type="text"  ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }} " required/>
+		   <p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 
 		  <div class="row">  
           	<div class="six columns">
-          		<input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+          		<input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="{{ 'CITY' | translate }}"  required/>
           	</div>
           	<div class="six columns">
-          		<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+          		<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }}" required/>
           	</div>
      	  </div>
           
-		   <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+		   <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
            
      	   <div class="row">  
      		   	<div class="six columns">
      	 		   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required autocomplete="off"/>
-     				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+     				<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">{{ 'IEMAIL' | translate }}</p>
             	</div>
             	<div class="six columns">
-      		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+      		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
       		 required/>
       		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
-      	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+      	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>
              </div>
           </div>
 		  
@@ -139,26 +137,26 @@
 			    <option value="" ></option>
 			    
 				<!-- <option value="Teenager" >Teenager</option> -->
-				<option value="Twenties">Twenties</option>
-				<option value="Thirties">Thirties</option>
-			     <option value="Fourties" >Fourties</option>
-			     <option value="Fifties">Fifties</option>
-			     <option value="Sixties">Sixties</option>
-				 <option value="Seventies">Seventies</option>
-				 <option value="Eighties">Eighties</option>
+			<option value="Twenties">{{ 'TWENTIES' | translate }}</option>
+			<option value="Thirties">{{ 'THIRTIES' | translate }}</option>
+		     <option value="Fourties" >{{ 'FOURTIES' | translate }}</option>
+		     <option value="Fifties">{{ 'FIFHTIES' | translate }}</option>
+		     <option value="Sixties">{{ 'SIXTIES' | translate }}</option>
+			 <option value="Seventies">{{ 'SEVENTIES' | translate }}</option>
+			 <option value="Eighties">{{ 'EIGHTIES' | translate }}</option>
 			</select>
 			<br>
 			<br>
 			
 			<label>{{ 'PROF' | translate }} </label>
             <input  name="prof" type="text" class="twelve" ng-model="main.composeEmail.prof" 
-			placeholder="E.g. Nurse, Engineer, Journalist ...."  />
+			placeholder="{{ 'PROFEG' | translate }}"  />
  		   <!-- <p ng-show="userForm.prof.$invalid && userForm.$submitted" class="error">Required!</p> -->
             
 			
 			<label>{{ 'HOB' | translate }} </label>
 			  <input name="hobb" type="text" ng-model="main.composeEmail.hobbie"
-		         placeholder="E.g. Blogging, Games, Reading ..." >
+		         placeholder="{{ 'HOBEG' | translate }}" >
 	  		    <!-- <p ng-show="userForm.hobb.$invalid && userForm.$submitted" class="error">Required!</p> -->
 
   		   <!-- TODO ? <label>Type of User</label>
@@ -178,11 +176,11 @@
 			   <h3>{{ 'MOREINFO' | translate }}</h3>
 			 <!-- <label>What will you use it for?  Add any other characteristics that you are going to need.</label> -->
 		   <textarea  ng:model="main.composeEmail.message"
-		   placeholder="Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you....."></textarea>
+		   placeholder="{{ 'MOREINFOEG' | translate }}"></textarea>
 		   
 		   
 		   
-           <input type="submit" value="Submit" class="button success"  ng-click="main.saveInfo(userForm.$valid)"
+           <input type="submit" value="{{ 'SUBMITPM' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"
 		   />
 		   <!-- ng-disabled="userForm.$invalid" --> 
          

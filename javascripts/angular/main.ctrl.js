@@ -4,28 +4,36 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	
     var vm = this;
+	vm.language = 'en';
     vm.title = 'Example';
 	vm.composeEmail = {};
 	vm.composeContact = {};
 		
 	
-	vm.computing = ['Laptop', 'PC', 'Tablet', 'Phone', 'Other'];
+	/* Types of gadgets */
+    vm.computing = ["LAPTOP", "PC", "TABLET", "Smartphone", "OTHER"];
 	
 	vm.photo = [
-	  'Digital Camera', 'Other'
-	];
-	vm.wearable = [
-	     'Activity trackers',
-	  
-	    'Wearable Cameras',
-		'Smart Watches',
-	      'Healthcare Devices',
-		'Gesture Control',
-		'Other'
+	  'DIGITALCAMERA', 'OTHER'
 	];
 	
-	vm.sound = [ 'Headphones','Earbuds','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'];
-	vm.home = ['Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'];
+	vm.wearable = [
+	     'ACTTRACKERS',
+	    'WEARABLECAM',
+		'SMARTWATCHES',
+	      'HEALTHDEVICES',
+		'GESTURECONTROL',
+		'OTHER'
+	];
+	
+	
+	vm.sound = [ 'HEADPHONES','HOMECINEMA', 'PCSPEAKER', 'WSPEAKERS', 'MP3/4', 'OTHER'];
+	
+	vm.home = ['COFFEEMAKER', 'DEHUMIFIER' ,'DISHWASHER', 'MICROWAVE','WMACHINE', 'FRIDGE', 'HEATER','OVEN', 'VACUUMCLEANER','OTHER'];
+	
+			
+	
+	/* List of characteristics */
 	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
   , "Multimedia", "Easy Use", "Brand"];
     vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
@@ -41,8 +49,6 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	vm.loadBasket=function(){
 		
-		vm.sound = [ 'Earbuds','Headphones','Home Cinema Speakers', 'PC Speakers', 'Wireless Speakers', 'MP3/4', 'Other'];
-		vm.home = ['Coffee Maker', 'Dehumifier' ,'Dishwasher', 'Microwave','Washing Machine', 'Fridge', 'Heater','Oven', 'Vacuum Cleaner','Other'];
 		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
 	  , "Multimedia", "Easy Use", "Brand"];
 	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
@@ -102,7 +108,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
    	vm.changeLanguage= function(key){
    		// alert(key);
-   		  $translate.use(key);
+ 		$translate.use(key);
+	  	vm.language = key;
    	};
 	
 	// vm.contact = function() {
@@ -164,198 +171,298 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 
 techshop.config(['$translateProvider', function ($translateProvider) {
 	
+    $translateProvider.translations('en', {
+  	   'HOME':'HOME',
+  	  'EXISTS':'DOES THIS EXIST?',
+  	  'SPEC':'TECH BY SPEC',
+	  
+  	  'GIFT':'GIFT ADVICE',
+  	  'PREMIUM':'PREMIUM SHOPPING',
+  	  'GADGETWEEK':'Gadget of the Week',
+  	  'MAIN':'We find the perfect product for you!',
+  	  'MAIN2':'Your Technology Personal Shoppers',
+  	  'TITLE1': 'Are you looking for your new technology purchase? ',
+  	  'TITLE2':  'Do you need the help of an expert or mainly want us to do all the research for you?',
+  	  'TITLE3': " We focus on your needs, there are a lot of options out there.... Let's find the one suitable for you at the best price.",
+  	  'TITLE4': "Tailored, personalised search. Check the sections below and ask us advice. For a limited period  ",
+  	   'TITLE5': "IT''S FREE !!!",
+        'EX':'Examples',
+  	 'FOO': 'This is a paragraph',
+  	  'SOUND':'Sound',
+  	  'PHOTO':'Photo',
+  	  'COMPUTING':'Computing & Phone',
+  	  'COMPUTINGSHORT':'Computing',
+  	  'OTHER':'Other',
+  	  'OTHEREG':'Not in the list? Name it',
+  	   'OTHEREGMENU':'Not in the main menu? Name it',
+  	  'WEARABLE':'Wearable Technology',
+  	  'HOUSE':'House',
+  	   'WE':'We',
+  	  'CONTACT':'Contact Us',
+  	    'CONTACT1':'Contact',
+  	   'YOU':'You',
+  	  'YOUR':'YOUR',
+  	  'YOURL':'Your',
+  	  'MOREINFO':'A BIT MORE INFO',
+  	  'MOREINFOEG':'Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you.....',
+	 
+  	  'SUBMIT1':'Find Perfect Match',
+  	  'SUBMIT2':'Find Perfect Gift',
+  	  'SUBMIT3':'Contact',
+  	  'SUBMITPM':'Find Perfect Match',
+	  
+  	  'BUDGET':'Budget',
+  	   'BUDGETEG':'Amount or range',
+	  
+	  
+  	   'LAPTOP': 'Laptop',
+  	   'TABLET': 'Tablet',
 
-  $translateProvider.translations('en', {
-	   'HOME':'HOME',
-	  'EXISTS':'DOES THIS EXIST?',
-	  'SPEC':'TECH BY SPEC',
+         'COFFEEMAKER': 'Coffee Maker', 
+  	  'DEHUMIFIER': 'Dehumifier' ,
+  	  'DISHWASHER': 'Dishwasher', 
+  	  'MICROWAVE': "Microwave",
+  	  'WMACHINE': "Washing Machine", 
+  	  'FRIDGE': "Fridge", 
+  	  'HEATER': "Heater",
+  	  'OVEN': 'Oven', 
+  	  'VACUUMCLEANER':'Vacuum cleaner',
 	  
-	  'GIFT':'GIFT ADVICE',
-	  'PREMIUM':'PREMIUM SHOPPING',
-	  'GADGETWEEK':'Gadget of the Week',
-	  'MAIN':'We find the perfect product for you!',
-	  'MAIN2':'Your Technology Personal Shoppers',
-	  'TITLE1': 'Are you looking for your new technology purchase? ',
-	  'TITLE2':  'Do you need the help of an expert or mainly want us to do all the research for you?',
-	  'TITLE3': " We focus on your needs, there are a lot of options out there.... Let's find the one suitable for you at the best price.",
-	  'TITLE4': "Tailored, personalised search. Check the sections below and ask us advice. For a limited period  ",
-	   'TITLE5': "IT''S FREE !!!",
-      'EX':'Examples',
-	 'FOO': 'This is a paragraph',
-	  'SOUND':'Sound',
-	  'PHOTO':'Photo',
-	  'COMPUTING':'Computing & Phone',
-	  'OTHER':'Other',
-	  'WEARABLE':'Wearable Technology',
-	  'HOUSE':'House',
-	   'WE':'We',
-	  'CONTACT':'Contact Us',
-	    'CONTACT1':'Contact',
-	   'YOU':'YOU',
-	  'YOUR':'YOUR',
-	  'MOREINFO':'A BIT MORE INFO',
-	   'SUBMIT1':'Find Perfect Match',
-	  'SUBMIT2':'Find Perfect Gift',
-	  'SUBMIT3':'Contact',
-	  'BUDGET':'Budget',
+  	  'DIGITALCAMERA':'Digital Camera',
+	  
+  	  'HEADPHONES':'Headphones/Earbuds',
+  	  'HOMECINEMA':'Home Cinema Speakers', 
+  	  'PCSPEAKER':'PC Speakers', 
+  	  'WSPEAKERS': 'Wireless Speakers', 
 	  
 	  
-	    'REQUIRED': 'REQUIRED',
-	  'NAME': 'Name',
-	  'CITY': 'City, Town',
-	  'COUNTRY': 'Country',
-	  'AMOUNT': 'Amount or range',
-	   'MESSAGE': 'Message',
+  	  'ACTTRACKERS':'Activity trackers',
+  	  'WEARABLECAM':  'Wearable Cameras',
+  	  'SMARTWATCHES': 'Smart Watches',
+  	  'HEALTHDEVICES':  'Healthcare Devices',
+  	  'GESTURECONTROL':'Gesture Control',
+	
+  	   'REQUIRED': 'Required!',
+  	  'CEMAIL':'Confirm Email',
+  	  'IEMAIL': 'Your email is incorrect',
+  	  'NOTMATCHEMAIL': ' Emails do NOT match',
 	  
-	  'AGE': 'Age',
-	  'PROF': 'Profession',
-	   'HOB': 'Hobbies',
-	  'DRAG_DROP':' Drag and Drop into the bucket what it is important for you ordered by preference (optional)',
+  	  'NAME': 'Name',
+  	  'CITY': 'City, Town',
+  	  'COUNTRY': 'Country',
+  	  'AMOUNT': 'Amount or range',
 	  
-	 //PERFECT MATCH
-	  'PMLAPTOP':' Looking for a new phone or laptop? Tell us what you need, we are here for YOU.',
+  	  'AGE': 'Age',
+  	  'TWENTIES': 'Twenties',
+  	  'THIRTIES': 'Thirties',
+  	  'FOURTIES': 'Fourties',
+  	  'FIFHTIES': 'Fifties',
+  	  'SIXTIES': 'Sixties',
+  	   'SEVENTIES': 'Seventies',
+  	   'EIGHTIES': 'Eighties',
+  	  'AGE': 'Age',
+
+  	  'PROF': 'Profession',
+  	   'PROFEG': 'E.g. Nurse, Engineer, Journalist ....',
+  	   'HOB': 'Hobbies',
+  	   'HOBEG': 'E.g. Bloggs, Games, Travel, Read ...',
+  	  'DRAG_DROP':' Drag and Drop into the bucket what it is important for you ordered by preference (optional)',
+	  
+  	 //PERFECT MATCH
+  	  'PMLAPTOP':' Looking for a new phone or laptop? Tell us what you need, we are here for YOU.',
 	 
-	   'PMSOUND':' Speakers, Home Theather...you can ask us about anything to do with music and sound. We have specialist that look for the best sound for every budget.',
-	'PMPHOTO':' Are you looking to buy a digital camera? We find the best camera for your needs.',
-	  'PMHOUSE':'Tehcnology is as well in our house appliances. Are you looking to change your fridge, washing machine, IoT etc? We find the best deal for you.',
-	  'PMWEARABLE':'Do you need inmediate access to information? Are you looking for a new tracking fitness device or a fashion statement? Tell us what you need.',
-	  'PMOTHER':'The gadget that you are looking for is not in the main menu? Please let us know what it is...We try to get it for you, as crazy as it might sound like.',
+  	   'PMSOUND':' Speakers, Home Theather...you can ask us about anything to do with music and sound. We have specialist that look for the best sound for every budget.',
+  	'PMPHOTO':' Are you looking to buy a digital camera? We find the best camera for your needs.',
+  	  'PMHOUSE':'Tehcnology is as well in our house appliances. Are you looking to change your fridge, washing machine, IoT etc? We find the best deal for you.',
+  	  'PMWEARABLE':'Do you need inmediate access to information? Are you looking for a new tracking fitness device or a fashion statement? Tell us what you need.',
+  	  'PMOTHER':'The gadget that you are looking for is not in the main menu? Please let us know what it is...We try to get it for you, as crazy as it might sound like.',
 	 
-	   // Exists
+  	   // Exists
 	  
-  	 'EXISTS1':'We find the solution for you!',
-  	 'EXISTS2':'Are you wondering if a specific product or tech solution exists?',
-	  'EXISTS3':' Are you trying to improve your day to day or how your business works?',
+    	 'EXISTS1':'We find the solution for you!',
+    	 'EXISTS2':'Are you wondering if a specific product or tech solution exists?',
+  	  'EXISTS3':' Are you trying to improve your day to day or how your business works?',
 	 
-	 'EXISTS4':"Describe",
+  	 'EXISTS4':"Describe",
 	 
-  	 'EXISTS5':" what you trying to solve, ",
-	 'EXISTS6': "we research ",
-	 'EXISTS7':" the solution for you, maybe you think it is not possible but we might find the way to make it reality. ",
-	 'EXISTS8':"We focus in solving problems for you or your business to make your life easier. Sometimes the solution is closer and cheaper than you think. ",
-      'EXISTS9': "Your crazy gadgets search go in this category too!",
+    	 'EXISTS5':" what you trying to solve, ",
+  	 'EXISTS6': "we research ",
+  	 'EXISTS7':" the solution for you, maybe you think it is not possible but we might find the way to make it reality. ",
+  	 'EXISTS8':"We focus in solving problems for you or your business to make your life easier. Sometimes the solution is closer and cheaper than you think. ",
+        'EXISTS9': "Your crazy gadgets search go in this category too!",
 	  
-	   'EXISTS10':' What is the problem that you need to solve?',
-	  // Premium
+  	   'EXISTS10':' What is the problem that you need to solve?',
+  	  // Premium
 	  
-  	'PREM1':'Premium Shopping Experience',
-  	'PREM2':'Technology makes your life easier but sometimes is dificult to find the right solution. ',
-  	'PREM3':"Do you need our dedicated personal assistance? Do you have an important decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need . ",
-	 	'PREM4'  :'How can we help?',
-	 	  // Tech by spec
-  'SPEC1':'Get only the best!',
-  'SPEC2':'Technology By Specifications',
-  'SPEC3':"Do you already know the specifications that you want for your next gadget but don't have time to research? We will find the best ones for you at the best price.  ",
-	 'SPEC4':"Or do you already have a gadget in mind? Tell us which one and we let you know if it is a good choice and advice you with others that you could get at the same price.",
-	  'GADGETSPEC':'Gadget Spec',
-	  //GIFT
-	  'GIFT1':'Gift the best in tech!',
-	  'GIFT2':'Gift Advice',
- 	 'GIFT3':'Are you not really into technology but you would like to gift somebody an special tech gift? We are here to help!',
-  	'GIFT4':'We find for you an original gadget to gift. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
- 	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfectprice :)',
-	  'GIFT6':'How you want to surprise him/her?',
-	  'TEAM':'The Team'
-  });
+    	'PREM1':'Premium Shopping Experience',
+    	'PREM2':'Technology makes your life easier but sometimes is dificult to find the right solution. ',
+    	'PREM3':"Do you need our dedicated personal assistance? Do you have an important decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need . ",
+  	 	'PREM4'  :'How can we help?',
+  	 	  // Tech by spec
+    'SPEC1':'Get only the best!',
+    'SPEC2':'Technology By Specifications',
+    'SPEC3':"Do you already know the specifications that you want for your next gadget but don't have time to research? We will find the best ones for you at the best price.  ",
+  	 'SPEC4':"Or do you already have a gadget in mind? Tell us which one and we let you know if it is a good choice and advice you with others that you could get at the same price.",
+  	  'GADGETSPEC':'Gadget Spec',
+  	  //GIFT
+  	  'GIFT1':'Gift the best in tech!',
+  	  'GIFT2':'Gift Advice',
+   	 'GIFT3':'Are you not really into technology but you would like to gift somebody an special tech gift? We are here to help!',
+    	'GIFT4':'We find for you an original gadget to gift. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
+   	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfectprice :)',
+  	  'GIFT6':'How you want to surprise him/her?'
+    });
   
-  $translateProvider.translations('es', {
-	   'HOME':'YTS',
-	  'EXISTS':'EXISTE?',
-	  'SPEC':'SÉ LAS ESPECIFICACIONES',
+    $translateProvider.translations('es', {
+  	   'HOME':'YTS',
+  	  'EXISTS':'EXISTE?',
+  	  'SPEC':'SÉ LAS ESPECIFICACIONES',
 	  
-	  'GIFT':'REGALOS ESPECIALES',
-	  'PREMIUM':'PREMIUM',
-	   'GADGETWEEK':'Gadget de la semana',
-	  'MAIN':'Encontramos el mejor producto para ti!',
-	  'MAIN2':'Tu Personal Shopper de tecnología',
-	  'TITLE1': ' Dinos lo qué necesitas. Nosotros lo encontramos ',
-	  'TITLE2':  'Ahorra tiempo y dinero ',
-	  'TITLE3': " Hacemos búsquedas personalizadas, nos centramos en tus necesidades, te escuchamos....y encontramos lo mejor para ti al mejor precio",
-	  'TITLE4': " Echa un vistazo a las siguientes categorías y déjanos aconsejarte. Por un  periodo limitado  ",
-	   'TITLE5': "ES GRATIS !!!",
-    'FOO': 'This is a paragraph',
-	  'SOUND':'Sonido',
-	  'PHOTO':'Fotografía',
-	  'COMPUTING':'Ordenadores y Telefonía',
-	  'OTHER':'Otros',
-	  'WEARABLE':'Tecnología ponible',
-	  'HOUSE':'Casa',
-	  'EX':'Ejemplos',
-	   'WE':'Nosotros',
-	   'CONTACT':'Contáctanos',
-	    'CONTACT1':'Contactar',
-	  'YOU':'TÚ',
-	   'YOUR':'TU',
-	  'BUDGET':'Presupuesto',
-	  'MOREINFO':'MÁS INFORMACIÓN',
-	  'NAME': 'Nombre',
-	  'CITY': 'Ciudad',
-	  'COUNTRY': 'País',
-	  'AMOUNT': 'Cantidad o rango',
-	  'MESSAGE': 'Mensaje',
+  	  'GIFT':'REGALOS ESPECIALES',
+  	  'PREMIUM':'PREMIUM',
+  	   'GADGETWEEK':'Gadget de la semana',
+  	  'MAIN':'Encontramos el mejor producto para ti!',
+  	  'MAIN2':'Tu Personal Shopper de Tecnología',
+  	  'TITLE1': ' Dinos lo qué necesitas. Nosotros lo encontramos ',
+  	  'TITLE2':  'Ahorra tiempo y dinero ',
+  	  'TITLE3': " Hacemos búsquedas personalizadas, nos centramos en tus necesidades, te escuchamos....y encontramos lo mejor para ti al mejor precio",
+  	  'TITLE4': " Echa un vistazo a las siguientes categorías y déjanos aconsejarte. Por un  periodo limitado  ",
+  	   'TITLE5': "ES GRATIS !!!",
+      'FOO': 'This is a paragraph',
+  	  'SOUND':'Sonido',
+  	  'PHOTO':'Fotografía',
+  	  'COMPUTING':'Ordenadores y Telefonía',
+  	   'COMPUTINGSHORT':'Ordenadores',
+  	  'OTHER':'Otro',
+  	  'OTHEREG':'No está ne la lista? Dinos lo q buscas',
+  	  'OTHEREGMENU':'No está ne nuestro menú? Dinos lo q buscas',
+  	  'WEARABLE':'Tecnología ponible',
+  	  'HOUSE':'Hogar',
+  	  'EX':'Ejemplos',
+  	   'WE':'Nosotros',
+  	   'CONTACT':'Contáctanos',
+  	    'CONTACT1':'Contactar',
+  	  'YOU':'TÚ',
+  	   'YOUR':'TU',
+  	  'YOURL':'Tu',
+  	  'BUDGET':'Presupuesto',
+  	   'BUDGETEG':'Cantidad or rango',
+	  
+  	  'MOREINFO':'MÁS INFORMACIÓN',
+  	   'MOREINFOEG':'Cuéntanos un poco a cerca de ti y como vas a usar este gadget para poder elegir el que mejor se adecua a ti .....',
+	
+  	  'NAME': 'Nombre',
+  	  'CITY': 'Ciudad',
+  	  'COUNTRY': 'País',
+  	  'AMOUNT': 'Cantidad o rango',
+  	  'MESSAGE': 'Mensaje',
+	  
+  	   'LAPTOP': 'Portátil',
+  	   'TABLET': 'Tableta',
+	  
+         'COFFEEMAKER': 'Cafetera', 
+  	  'DEHUMIFIER': 'Deshumidificador' ,
+  	  'DISHWASHER': 'Lavavajillas', 
+  	  'MICROWAVE': "Microhondas",
+  	  'WMACHINE': "Lavadora", 
+  	  'FRIDGE': "Frigoífico", 
+  	  'HEATER': "Calentador",
+  	  'OVEN': 'Horno', 
+  	  'VACUUMCLEANER':'Aspiradora',
+	  
+  	   'DIGITALCAMERA':'Cámara Digital',
+	  
+  	  'HEADPHONES':'Cascos',
+  	  'HOMECINEMA':'Altavoces Home Cinema', 
+  	  'PCSPEAKER':'Altavoces para PC', 
+  	  'WSPEAKERS': 'Altavoces inalámbricos', 
 	  
 	  
-	    'REQUIRED': 'Obligatorio',
+  	  'ACTTRACKERS':'Monitores de Actividad',
+  	  'WEARABLECAM':  'Cámaras Portátiles',
+  	  'SMARTWATCHES': 'Relojes Inteligentes',
+  	  'HEALTHDEVICES':  'Aparatos para la Salud ',
+  	  'GESTURECONTROL':' Controladores de Gestos',
+	
 	  
-	  'AGE': 'Edad',
-	  'PROF': 'Profesión',
-	  'HOB': 'Aficiones',
-	  'DRAG_DROP':' Mueve dentro del cubo lo que es important para ti en orden de preferencia (opcional)',
+	  
+  	    'REQUIRED': 'Obligatorio!',
+  	  'CEMAIL':'Confirmar Email',
+  	   'IEMAIL': ' Email incorrecto',
+  	   'NOTMATCHEMAIL': ' Emails NO son iguales',
+	 
+	  
+  	  'AGE': 'Edad',
+  	  'TWENTIES': 'En mis 20',
+  	  'THIRTIES': 'En mis 30',
+  	  'FOURTIES': 'En mis 40',
+  	  'FIFHTIES': 'En mis 50',
+  	  'SIXTIES': 'En mis 60',
+  	   'SEVENTIES': 'En mis 70',
+  	   'EIGHTIES': 'En mis 80',
+	  
+  	  'PROF': 'Profesión',
+  	   'PROFEG': 'Ej. Enfermer@, arquitecto, periodista, ....',
+  	  'HOB': 'Aficiones',
+  	   'HOBEG': 'Ej. Blogs, viajar, leer, videojuegos ...',
+  	  'DRAG_DROP':' Mueve dentro del cubo lo que es important para ti en orden de preferencia (opcional)',
 	  
 	    
-	  // 'SUBMIT1':'Comprar lo mejor',
-	   'SUBMIT1':'Aconséjame',
-	   'SUBMIT2':'Encontrar regalo perfecto',
-	   'SUBMIT3':'Contactar',
+  	  // 'SUBMIT1':'Comprar lo mejor',
+  	   'SUBMIT1':'Aconséjame',
+  	   'SUBMIT2':'Encontrar regalo perfecto',
+  	   'SUBMIT3':'Contactar',
+  	   'SUBMITPM':'Encontrar Perfect Match',
 	 
-	 //PERFECT MATCH
-	  'PMLAPTOP':' Buscas un nuevo ordenador o smartphone ? Dinos lo que buscas, estamos aquí para ayudarte.',
-	   'PMSOUND':' Altavoces, cascos ...nos puedes preguntar lo que quieras a cerca de música y sonido. Tenemos especialistas que buscan lo mejor adaptado a cualquier tipo bolsillo.',
-	 'PMPHOTO':' Estás buscando una cámara digital? Buscamos la mejor cámara que se adapte a tus necesidades.',
-	  'PMHOUSE':'La tecnología está también en nuestro hogar. Buscas cambiar tu frigorífico, lavadora, etc? Buscamos la mejor oferta para ti. ',
+  	 //PERFECT MATCH
+  	  'PMLAPTOP':' Buscas un nuevo ordenador o smartphone ? Dinos lo que buscas, estamos aquí para ayudarte.',
+  	   'PMSOUND':' Altavoces, cascos ...nos puedes preguntar lo que quieras a cerca de música y sonido. Tenemos especialistas que buscan lo mejor adaptado a cualquier tipo bolsillo.',
+  	 'PMPHOTO':' Estás buscando una cámara digital? Buscamos la mejor cámara que se adapte a tus necesidades.',
+  	  'PMHOUSE':'La tecnología está también en nuestro hogar. Buscas cambiar tu frigorífico, lavadora, etc? Buscamos la mejor oferta para ti. ',
 	 
-	  'PMWEARABLE':' Buscas un nuevo monitor de actividad o un gadget que marque tendencia? Dinos lo que buscas.',
-	  'PMOTHER':'Lo que estás buscando no aparece en el menú? Dinos lo que buscas...Intentamos encontrarlo aunque parezca imposible.',
-	   // Exists
+  	  'PMWEARABLE':' Buscas un nuevo monitor de actividad o un gadget que marque tendencia? Dinos lo que buscas.',
+  	  'PMOTHER':'Lo que estás buscando no aparece en el menú? Dinos lo que buscas...Intentamos encontrarlo aunque parezca imposible.',
+  	   // Exists
 	  
-  	'EXISTS1':'Encontramos la solución adecuada para ti!',
-  	'EXISTS2':'Quieres sabes si un determinado producto o solución existe ?',
-	    'EXISTS3':' Estás intentando mejorar tu día a día o tu negocio?',
-	  'EXISTS4':"Describe",
+    	'EXISTS1':'Encontramos la solución adecuada para ti!',
+    	'EXISTS2':'Quieres sabes si un determinado producto o solución existe ?',
+  	    'EXISTS3':' Estás intentando mejorar tu día a día o tu negocio?',
+  	  'EXISTS4':"Describe",
 	 
-  	'EXISTS5':" cuál es el problema que estás intentando solucionar, ",
-	 'EXISTS6':" nosotros investigamos ",
-	 'EXISTS7':" la solución que necesitas, quizás creas que no es posible pero igual nosotros encontramos una manera de hacerlo realidad. ",
-	'EXISTS8':"Nos centramos en resolver tus problemas y los de tu negocio, para simplificar y optimizar tu trabajo. A veces la solución está más cerca de lo que crees.",
-     'EXISTS9':"Si estás buscando un gadget raro este también es tu apartado. ",
+    	'EXISTS5':" cuál es el problema que estás intentando solucionar, ",
+  	 'EXISTS6':" nosotros investigamos ",
+  	 'EXISTS7':" la solución que necesitas, quizás creas que no es posible pero igual nosotros encontramos una manera de hacerlo realidad. ",
+  	'EXISTS8':"Nos centramos en resolver tus problemas y los de tu negocio, para simplificar y optimizar tu trabajo. A veces la solución está más cerca de lo que crees.",
+       'EXISTS9':"Si estás buscando un gadget raro este también es tu apartado. ",
 	  
-	 'EXISTS10':' Cuál es el problema que estás intentando solucionar?',
-	   // Premium
+  	 'EXISTS10':' Cuál es el problema que estás intentando solucionar?',
+  	   // Premium
 	  
-  	'PREM1':'Consejo Personalizado Premium',
-  	'PREM2':'La tecnología hace tu vida más simple pero a veces es difícil encontrar la solución adecuada.',
+    	'PREM1':'Consejo Personalizado Premium',
+    	'PREM2':'La tecnología hace tu vida más simple pero a veces es difícil encontrar la solución adecuada.',
   	
-  	'PREM3':"Necesitas atención dedicada? Tienes que tomar una decisión importante y necesitas consejo? Contáctanos e intentaremos darte la atención personal que necesitas",
-	'PREM4'  :'Cómo podemos ayudarte?',
+    	'PREM3':"Necesitas atención dedicada? Tienes que tomar una decisión importante y necesitas consejo? Contáctanos e intentaremos darte la atención personal que necesitas",
+  	'PREM4'  :'Cómo podemos ayudarte?',
 	  
 	 
 	
-	  // Tech by spec
+  	  // Tech by spec
 	  
-  	'SPEC1':'Compra sólo lo mejor!',
-  	'SPEC2':'Tecnología por especificaciones',
-  	'SPEC3':"Sabes el tipo de especificaciones que quieres pero no tienes tiempo de buscar? Nosotros investigamos para encontrar el mejor producto con esas condiciones al mejor precio. ",
-	 'SPEC4':"O ya sabes que gadget quieres? Dinos cual y te decimos si es una buena opción y te enseñamos otros que puedes comprar al mismo precio.",
-	  'GADGETSPEC':'Especificaciones',
-	  //GIFT
-	  'GIFT1':'Regala lo mejor en technología!',
-	  'GIFT2':'Regalos Especiales',
- 	 'GIFT3':'No sabes de tecnología pero te gustaría regalar algo especial? Te ayudamos!',
-  	'GIFT4':'Encontramos un gadget original para esa persona. Te damos ideas, mejores precios, incluyendo websites o tiendas donde puedes compralo si no te gusta comprar online.', 
- 	 'GIFT5':'Sólo necesitas describir a la persona que quieres sorprender y nosotros hacemos todo el trabajo duro y encontramos el regalo perfecto',
-	   'GIFT6':'Cómo te gustaría sorprendel@?',
-	   'TEAM':'El Equipo'
-  });
+    	'SPEC1':'Compra sólo lo mejor!',
+    	'SPEC2':'Tecnología por especificaciones',
+    	'SPEC3':"Sabes el tipo de especificaciones que quieres pero no tienes tiempo de buscar? Nosotros investigamos para encontrar el mejor producto con esas condiciones al mejor precio. ",
+  	 'SPEC4':"O ya sabes que gadget quieres? Dinos cual y te decimos si es una buena opción y te enseñamos otros que puedes comprar al mismo precio.",
+  	  'GADGETSPEC':'Especificaciones',
+  	  //GIFT
+  	  'GIFT1':'Regala lo mejor en technología!',
+  	  'GIFT2':'Regalos Especiales',
+   	 'GIFT3':'No sabes de tecnología pero te gustaría regalar algo especial? Te ayudamos!',
+    	'GIFT4':'Encontramos un gadget original para esa persona. Te damos ideas, mejores precios, incluyendo websites o tiendas donde puedes compralo si no te gusta comprar online.', 
+   	 'GIFT5':'Sólo necesitas describir a la persona que quieres sorprender y nosotros hacemos todo el trabajo duro y encontramos el regalo perfecto',
+  	   'GIFT6':'Cómo te gustaría sorprendel@?',
+  	   'TEAM':'El Equipo'
+    });
+
 
 // Enable escaping of HTML
   $translateProvider.useSanitizeValueStrategy('escaped');
