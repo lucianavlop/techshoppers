@@ -210,7 +210,17 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'SUBMIT2':'Find Perfect Gift',
   	  'SUBMIT3':'Contact',
   	  'SUBMITPM':'Find Perfect Match',
-	  
+	  'SUBMITED':' Cool!! Submitted',
+		'SUCCESS': 'You have succesfully submited your query. You are a bit closer to your desire gadget/solution.',
+		'SUCCESS1': 'We will send you an e-mail with a link to get the results very soon ',
+		'SUCCESS2': 'PS: This is our BETA version and we are getting a lot of queries. It might be 5 days until we do all the research and find the gadget that you deserve. Hopefully is a bit less',
+		
+		
+		'NOSUBMITED':' Sorry!!',
+		'SORRY': '	Your query has not been submitted correctly.',
+		'SORRY1': 'Please try again. Sorry for any incovenience caused.',
+	 
+		
   	  'BUDGET':'Budget',
   	   'BUDGETEG':'Amount or range',
 	  
@@ -413,6 +423,15 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	   'SUBMIT2':'Encontrar regalo perfecto',
   	   'SUBMIT3':'Contactar',
   	   'SUBMITPM':'Encontrar Perfect Match',
+		
+		'SUBMITED':' Gracias por contactarnos!!',
+		'SUCCESS': 'Ya tenemos la información que necesitamos. Estás un paso más cerca de tu deseado gadget/producto.',
+  	  	'SUCCESS1': 'Le mandaremos un e-mail con un link a los resultados pronto. ',
+		'SUCCESS1': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en buscar y encontrar el gadget que te mereces al mejor precio. Esperamos que sea menos ',
+		
+		'NOSUBMITED':' Lo sentimos!!',
+		'SORRY': '	Su informacion no ha sido tramitada correctamente.',
+		'SORRY1': 'Por favor, inténtelo de nuevo. Lo sentimos.',
 	 
   	 //PERFECT MATCH
   	  'PMLAPTOP':' Buscas un nuevo ordenador o smartphone ? Dinos lo que buscas, estamos aquí para ayudarte.',
