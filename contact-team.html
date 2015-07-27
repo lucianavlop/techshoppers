@@ -46,7 +46,7 @@
     
 		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
         <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
-   	   <input type="submit" value="{{ 'CONTACT' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+   	   <input type="submit" value="{{ 'CONTACT' | translate }}" class="button success"  ng-click="main.saveInfoContact(userForm.$valid)"/> 
 	 	 
 		 <br>
 		 <br>

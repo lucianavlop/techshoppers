@@ -91,6 +91,27 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 		 
 	};
 	
+	vm.saveInfoContact = function(isValid) {
+		if (isValid) {
+						 $http.post('save.php', JSON.stringify(vm.composeEmail))
+ 						.success(
+							function(data, status) {
+							      if (data == 'success') {
+									  
+ 									  	window.location = '#/contactsuccess'
+									 
+								  }else{
+								  	  window.location = '#/error'
+								  }
+							  }
+ 						)
+ 						;
+			}else{
+       	 		
+				$scope.userForm.submitted=true;
+		}	 
+	};
+	
 	 // To activate the right menus
     vm.isActive = function(viewLocation) {
          return viewLocation === $location.path();
@@ -212,9 +233,9 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'SUBMITPM':'Find Perfect Match',
 		
 	  'SUBMITED':' Cool!! Submitted',
-		'SUCCESS': 'You have succesfully submited your query. You are a bit closer to your desire gadget/solution.',
-		'SUCCESS1': 'We will send you an e-mail with a link to get the results very soon ',
-		'SUCCESS2': 'PS: This is our BETA version and we are getting a lot of queries. It might be 5 days until we do all the research and find the gadget that you deserve. Hopefully is a bit less',
+		'SUCCESS': 'You have succesfully submitted your query. ',
+		'SUCCESS1': 'You are a bit closer to your desire gadget/solution. We will send you an e-mail with a link to get the results very soon ',
+		'SUCCESS2': 'PS: This is our BETA version and we are getting a lot of queries. It might be up to 5 days until we contact you back. Hopefully is a bit less',
 		
 		
 		'NOSUBMITED':' Sorry!!',
@@ -262,6 +283,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'CITY': 'City, Town',
   	  'COUNTRY': 'Country',
   	  'AMOUNT': 'Amount or range',
+		'MESSAGE': 'Message',
 	  
   	  'AGE': 'Age',
   	  'TWENTIES': 'Twenties',
@@ -426,10 +448,10 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	   'SUBMITPM':'Encontrar Perfect Match',
 		
 		'SUBMITED':' Gracias por contactarnos!!',
-		'SUCCESS': 'Ya tenemos la información que necesitamos. Estás un paso más cerca de tu deseado gadget/producto.',
-  	  	'SUCCESS1': 'Le mandaremos un e-mail con un link a los resultados pronto. ',
-		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en buscar y encontrar el gadget que te mereces al mejor precio. Esperamos que sea menos. ',
-		
+		'SUCCESS': 'Ya tenemos la información que necesitamos. ',
+  	  	'SUCCESS1': 'Estás un paso más cerca de tu deseado gadget/producto. Le mandaremos un e-mail con un link a los resultados pronto. ',
+		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en contactarle. Esperamos que sea menos ',
+				
 		'NOSUBMITED':' Lo sentimos!!',
 		'SORRY': '	Su informacion no ha sido tramitada correctamente.',
 		'SORRY1': 'Por favor, inténtelo de nuevo. Lo sentimos.',
