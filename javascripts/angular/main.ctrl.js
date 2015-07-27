@@ -570,6 +570,9 @@ techshop.config(function($routeProvider){
           .when('/success',{
                 templateUrl: 'success.html'
           })
+          .when('/contactsuccess',{
+                templateUrl: 'contactsuccess.html'
+          })
           .when('/error',{
                 templateUrl: 'error.html'
           });
