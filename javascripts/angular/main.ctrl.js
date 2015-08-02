@@ -398,8 +398,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'DISHWASHER': 'Lavavajillas', 
   	  'MICROWAVE': "Microhondas",
   	  'WMACHINE': "Lavadora", 
-  	  'FRIDGE': "Frigoífico", 
-  	  'HEATER': "Calentador",
+  	  'FRIDGE': "Frigorífico", 
+  	  'HEATER': "Calefacción",
   	  'OVEN': 'Horno', 
   	  'VACUUMCLEANER':'Aspiradora',
 	  
@@ -415,7 +415,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'WEARABLECAM':  'Cámaras Portátiles',
   	  'SMARTWATCHES': 'Relojes Inteligentes',
   	  'HEALTHDEVICES':  'Aparatos para la Salud ',
-  	  'GESTURECONTROL':' Controladores de Gestos',
+  	  'GESTURECONTROL':'Controladores de Gestos',
 	
 	  
 	  
