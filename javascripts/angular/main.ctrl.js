@@ -29,7 +29,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	vm.sound = [ 'HEADPHONES','HOMECINEMA', 'PCSPEAKER', 'WSPEAKERS', 'MP3/4', 'OTHER'];
 	
-	vm.home = ['COFFEEMAKER', 'DEHUMIFIER' ,'DISHWASHER', 'MICROWAVE','WMACHINE', 'FRIDGE', 'HEATER','OVEN', 'VACUUMCLEANER','OTHER'];
+	vm.home = ['TV','COFFEEMAKER', 'DEHUMIFIER' ,'DISHWASHER', 'MICROWAVE','WMACHINE', 'FRIDGE', 'HEATER','OVEN', 'VACUUMCLEANER','OTHER'];
 	
 			
 	
@@ -250,7 +250,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	   'LAPTOP': 'Laptop',
   	   'TABLET': 'Tablet',
 
-         'COFFEEMAKER': 'Coffee Maker', 
+ 	  'TV': 'TV',
+      'COFFEEMAKER': 'Coffee Maker', 
   	  'DEHUMIFIER': 'Dehumifier' ,
   	  'DISHWASHER': 'Dishwasher', 
   	  'MICROWAVE': "Microwave",
@@ -356,7 +357,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	   'GADGETWEEK':'Gadget de la semana',
   	  'MAIN':'Encontramos el mejor producto para ti!',
   	  'MAIN2':'Tu Personal Shopper de Tecnología',
-  	  'TITLE1': ' Dinos lo qué necesitas. Nosotros lo encontramos ',
+  	  'TITLE1': ' Dinos lo que necesitas. Nosotros lo encontramos ',
   	  'TITLE2':  'Ahorra tiempo y dinero ',
   	  'TITLE3': " Hacemos búsquedas personalizadas, nos centramos en tus necesidades, te escuchamos....y encontramos lo mejor para ti al mejor precio",
   	  'TITLE4': " Echa un vistazo a las siguientes categorías y déjanos aconsejarte. Por un  periodo limitado  ",
@@ -382,7 +383,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	   'BUDGETEG':'Cantidad or rango',
 	  
   	  'MOREINFO':'MÁS INFORMACIÓN',
-  	   'MOREINFOEG':'Cuéntanos un poco a cerca de ti y como vas a usar este gadget para poder elegir el que mejor se adecua a ti .....',
+  	  'MOREINFOEG':'Cuéntanos un poco a cerca de ti y como vas a usar este gadget para poder elegir el que mejor se adecua a ti .....',
 	
   	  'NAME': 'Nombre',
   	  'CITY': 'Ciudad',
@@ -390,13 +391,15 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'AMOUNT': 'Cantidad o rango',
   	  'MESSAGE': 'Mensaje',
 	  
-  	   'LAPTOP': 'Portátil',
-  	   'TABLET': 'Tableta',
+  	  'LAPTOP': 'Portátil',
+  	  'TABLET': 'Tableta',
 	  
-         'COFFEEMAKER': 'Cafetera', 
+      
+	  'TV': 'TV',
+	  'COFFEEMAKER': 'Cafetera', 
   	  'DEHUMIFIER': 'Deshumidificador' ,
   	  'DISHWASHER': 'Lavavajillas', 
-  	  'MICROWAVE': "Microhondas",
+  	  'MICROWAVE': "Microondas",
   	  'WMACHINE': "Lavadora", 
   	  'FRIDGE': "Frigorífico", 
   	  'HEATER': "Calefacción",
