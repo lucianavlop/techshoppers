@@ -540,6 +540,9 @@ techshop.config(function($routeProvider){
           .when('/blog2',{
                 templateUrl: 'pricing-table-baby monitor.html'
           })
+          .when('/segun',{
+                templateUrl: 'pricing-table-segun.html'
+          })
           .when('/blog3',{
                 templateUrl: 'blog3.html'
           })
