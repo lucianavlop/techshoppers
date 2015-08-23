@@ -24,6 +24,10 @@ select{
 		a.blog{
 			font-size: 20px;
 		}	
+		
+		.noborder{
+		  border:none;
+		}
 /*
 .basket-table{
 	margin: 0;
