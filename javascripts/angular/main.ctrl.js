@@ -536,7 +536,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'TIME':'TIEMPO',
 		'MONEY':'DINERO',
 		'EXCLUSIVITY':'EXCLUSIVIDAD',
-		'INDEPENDENT':'INDEPENDIENTES',
+		'INDEPENDENT':'INDEPENDENCIA',
 		'QUALITY':'CALIDAD',
 		'SUITABILITY':'IDONIEDAD',
 		'KNOWDLEGE':'CONOCIMIENTO',
