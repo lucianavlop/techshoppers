@@ -336,7 +336,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
     'SPEC1':'Get only the best!',
     'SPEC2':'Technology By Specifications',
     'SPEC3':"Do you already know the specifications that you want for your next gadget but don't have time to research? We will find the best ones for you at the best price.  ",
-  	 'SPEC4':"Or do you already have a gadget in mind? Tell us which one and we let you know if it is a good choice and advice you with others that you could get at the same price.",
+  	 'SPEC4':"Or do you already have a gadget in mind? Tell us which one and we will let you know if it is a good choice and advise you about others that you could get at the same price.",
   	  'GADGETSPEC':'Gadget Spec',
   	  //GIFT
   	  'GIFT1':'Gift the best in tech!',
