@@ -474,8 +474,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		
 		'SUBMITED':' ¡¡Gracias por contactarnos!!',
 		'SUCCESS': 'Ya tenemos la información que necesitamos. ',
-  	  	'SUCCESS1': 'Estás un paso más cerca de tu deseado gadget/producto. Le mandaremos un e-mail con un link a los resultados pronto. ',
-		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en contactarle. Esperamos que sea menos ',
+  	  	'SUCCESS1': 'Estás un paso más cerca de tu deseado gadget/producto. Te mandaremos un e-mail con un link a los resultados pronto. ',
+		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en contactarte. Esperamos que sea menos ',
 		
 		'NOSUBMITED':' ¡¡Lo sentimos!!',
 		'SORRY': '	Su informacion no ha sido tramitada correctamente.',
