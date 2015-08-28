@@ -626,6 +626,11 @@ techshop.config(function($routeProvider){
           .when('/success',{
                 templateUrl: 'success.html'
           })
+		  
+          .when('/clara301',{
+                templateUrl: 'pricing-table-clara301.html'
+          })
+		  
           .when('/contactsuccess',{
                 templateUrl: 'contactsuccess.html'
           })
