@@ -630,7 +630,9 @@ techshop.config(function($routeProvider){
           .when('/clara301',{
                 templateUrl: 'pricing-table-clara301.html'
           })
-		  
+          .when('/juancarlos302',{
+                templateUrl: 'pricing-table-juancarlos302.html'
+          })
           .when('/contactsuccess',{
                 templateUrl: 'contactsuccess.html'
           })
