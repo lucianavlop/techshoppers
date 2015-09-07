@@ -252,7 +252,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 
  	  'TV': 'TV',
       'COFFEEMAKER': 'Coffee Maker', 
-  	  'DEHUMIFIER': 'Dehumifier' ,
+  	  'DEHUMIFIER': 'Dehumidifier' ,
   	  'DISHWASHER': 'Dishwasher', 
   	  'MICROWAVE': "Microwave",
   	  'WMACHINE': "Washing Machine", 
