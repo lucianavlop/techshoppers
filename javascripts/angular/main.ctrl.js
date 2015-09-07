@@ -343,7 +343,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'GIFT2':'Gift Advice',
    	 'GIFT3':'Are you not really into technology but you would like to gift somebody an special tech gift? We are here to help!',
     	'GIFT4':'We find for you an original gadget to gift. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
-   	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfectprice :)',
+   	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfect price :)',
   	  'GIFT6':'How you want to surprise him/her?',
 		
 	//why section
