@@ -358,7 +358,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'EXCLUSIVITY1':'We Focus on YOU and nobody else. All our efforts are tailored to get you the best.',
 		
 		'DOCUMENT1':'We give enough information so YOU can make your own decision.',
-		'KNOWDLEGE1':"We are experts in technology. It's difficult to stay up to day but we try our best to be on top of everything related to it. ",
+		'KNOWDLEGE1':"We are experts in technology. It's difficult to stay up to date but we try our best to be on top of everything related to it. ",
 				'SUITABILITY1':"We don't look for the best. We look for the best for you.",
 			'QUALITY1':"Get quality. Using our advice you can find a better  product for the same budget.",
 		'INDEPENDENT1':"We are not tied to any shop and/or gadget. We advice you of the best gadget and best prices that we can find. If you are happy with our advice you can buy it wherever you want.",
@@ -539,7 +539,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'INDEPENDENT':'INDEPENDENCIA',
 		'QUALITY':'CALIDAD',
 		'SUITABILITY':'IDONIEDAD',
-		'KNOWDLEGE':'CONOCIMIENTO',
+		'KNOWLEDGE':'CONOCIMIENTO',
 		'KNOWDLEGE1':"Somos expertos en technología. Es difícil estar al corriente de todo lo que ocurre en este área, nosotros lo intentamos.",
 		'SUITABILITY1':"No buscamos lo mejor. Buscamos lo mejor para ti. ",
 			'QUALITY1':" Obtén mejor calidad. Usando nuestros servicios puedes encontrar un mejor producto por el mismo dinero.",
