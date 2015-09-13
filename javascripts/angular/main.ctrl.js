@@ -34,13 +34,12 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 			
 	
 	/* List of characteristics */
-	vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
-  , "Multimedia", "Easy Use", "Brand"];
-    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
-  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Phasion"];
-   vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power", "Brand"];
-  
-   vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
+  	vm.listComputing = ["Battery Life", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design"
+    , "Multimedia", "Easy Use", "Brand"];
+      vm.listPhoto = ["Battery Life", "Touch Screen", "Storage", "Wifi","Design", "Easy Use", "Brand"];
+    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
+     vm.listSound = [ "Brand", "Bluethoot","Bass", "Design","Power"];
+     vm.listHome = ["Brand", "Design", "Power", "Energy Rating", "Easy Use"];
 	// vm.listHomeBasic = ["Design", "Power", "Brand", "Energy rating"];
   
 	vm.composeEmail.listNeed = [];
@@ -49,12 +48,12 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	
 	vm.loadBasket=function(){
 		
-		vm.listComputing = ["Autonomy", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design", "Coolness"
-	  , "Multimedia", "Easy Use", "Brand"];
-	    vm.listPhoto = ["Autonomy", "Touch Screen", "Storage", "Wifi","Design", "Coolness", "Easy Use", "Brand"];
-	  	vm.listWearable = ["Autonomy", "Display/Resolution",  "Design", "Coolness",  "Easy Use", "Brand", "Fashion"];
-	   vm.listSound = ["Bluethoot","Bass", "Design", "Coolness", "Power", "Brand"];
-		vm.listHome = ["Design", "Power", "Brand", "Energy rating"];
+	  	vm.listComputing = ["Battery Life", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design"
+	    , "Multimedia", "Easy Use", "Brand"];
+	      vm.listPhoto = ["Battery Life", "Touch Screen", "Storage", "Wifi","Design", "Easy Use", "Brand"];
+	    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
+ 	     vm.listSound = [ "Brand", "Bluethoot","Bass", "Design","Power"];
+	     vm.listHome = ["Brand", "Design", "Power", "Energy Rating", "Easy Use"];
 	}
 	
 	vm.sortableOptions= {
