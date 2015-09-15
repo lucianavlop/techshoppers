@@ -201,7 +201,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'GADGETWEEK':'Gadget of the Week',
   	  'MAIN':'We find the perfect product for you!',
   	  'MAIN2':'Your Technology Personal Shoppers',
-  	  'TITLE1': 'Are you looking for your new technology purchase? ',
+  	  'TITLE1': 'Are you looking  to purchase new technology ? ',
   	  'TITLE2':  'Do you need the help of an expert or mainly want us to do all the research for you?',
   	  'TITLE3': " We focus on your needs, there are a lot of options out there.... Let's find the one suitable for you at the best price.",
   	  'TITLE4': "Tailored, personalised search. Check the sections below and ask us advice. For a limited period  ",
@@ -318,9 +318,9 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	 
   	 'EXISTS4':"Describe",
 	 
-    	 'EXISTS5':" what you trying to solve, ",
+    	 'EXISTS5':" what you are trying to solve, ",
   	 'EXISTS6': "we research ",
-  	 'EXISTS7':" the solution for you, maybe you think it is not possible but we might find the way to make it reality. ",
+  	 'EXISTS7':" the solution for you. Maybe you think it is not possible but we might find the way to make it a reality. ",
   	 'EXISTS8':"We focus in solving problems for you or your business to make your life easier. Sometimes the solution is closer and cheaper than you think. ",
         'EXISTS9': "Your crazy gadgets search go in this category too!",
 	  
@@ -340,8 +340,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  //GIFT
   	  'GIFT1':'Gift the best in tech!',
   	  'GIFT2':'Gift Advice',
-   	 'GIFT3':'Are you not really into technology but you would like to gift somebody an special tech gift? We are here to help!',
-    	'GIFT4':'We find for you an original gadget to gift. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
+   	 'GIFT3':'Are you not really into technology but you would like to get somebody a special tech gift? We are here to help!',
+    	'GIFT4':'We find for you original gadgets. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
    	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfect price :)',
   	  'GIFT6':'How you want to surprise him/her?',
 		
@@ -350,17 +350,17 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'SEVERALLANGUAGES':'SEVERAL LANGUAGES',
 		
 		'WHY1':'Why  have a Personal Technology Shopper ? ',
-		'WHY2':'Depending of the type of shopper that you are, you might  want to use us for different reasons',
-		'MONEY1':'We know the places where to find the best deals, so you can safe money on your 	purchase.',
+		'WHY2':'You might want to use us for different reasons, depending on the type of shopper that you are',
+		'MONEY1':'We know where to find the best deals, so you can save money on your 	purchase.',
 		
 		'IDEAS1':' Ask us for gift ideas, to help you solve problems for your family or company. Our heads are continually working to improve your life.',
 		'EXCLUSIVITY1':'We Focus on YOU and nobody else. All our efforts are tailored to get you the best.',
 		
 		'DOCUMENT1':'We give enough information so YOU can make your own decision.',
-		'KNOWDLEGE1':"We are experts in technology. It's difficult to stay up to date but we try our best to be on top of everything related to it. ",
+		'KNOWDLEGE1':"We are experts in technology. It's difficult to stay up to date but we try our best to be on top of everything tech related . ",
 				'SUITABILITY1':"We don't look for the best. We look for the best for you.",
 			'QUALITY1':"Get quality. Using our advice you can find a better  product for the same budget.",
-		'INDEPENDENT1':"We are not tied to any shop and/or gadget. We advice you of the best gadget and best prices that we can find. If you are happy with our advice you can buy it wherever you want.",
+		'INDEPENDENT1':"We are not tied to any shop and/or gadget. We advise you of the best gadget and best prices that we can find. If you are happy with our advice you can buy it wherever you want.",
 		'SEVERALLANGUAGES1':"We speak Spanish and English. We can help you in any of these two languages and deal with your technology providers on both. ",
 		
 		'TIME1':"It's not about 'having' time. It's about making time." ,
