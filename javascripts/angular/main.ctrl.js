@@ -328,7 +328,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  // Premium
 	  
     	'PREM1':'Premium Shopping Experience',
-    	'PREM2':'Technology makes your life easier but sometimes is dificult to find the right solution. ',
+    	'PREM2':"Technology makes your life easier but sometimes it's difficult to find the right solution. ",
     	'PREM3':"Do you need our dedicated personal assistance? Do you have an important decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need . ",
   	 	'PREM4'  :'How can we help?',
   	 	  // Tech by spec
