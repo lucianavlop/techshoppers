@@ -224,7 +224,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'YOUR':'YOUR',
   	  'YOURL':'Your',
   	  'MOREINFO':'A BIT MORE INFO',
-  	  'MOREINFOEG':'Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match fo you.....',
+  	  'MOREINFOEG':'Tell us a bit more about you and/or how you are going to use this gadget so we can choose the perfect match for you.....',
 	 
   	  'SUBMIT1':'Find Perfect Match',
   	  'SUBMIT2':'Find Perfect Gift',
@@ -304,11 +304,11 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	 //PERFECT MATCH
   	  'PMLAPTOP':' Looking for a new phone or laptop? Tell us what you need, we are here for YOU.',
 	 
-  	   'PMSOUND':' Speakers, Home Theather...you can ask us about anything to do with music and sound. We have specialist that look for the best sound for every budget.',
+  	   'PMSOUND':' Speakers, Home Theatre...you can ask us about anything to do with music and sound. We have specialists that look for the best sound for every budget.',
   	'PMPHOTO':' Are you looking to buy a digital camera? We find the best camera for your needs.',
-  	  'PMHOUSE':'Tehcnology is as well in our house appliances. Are you looking to change your fridge, washing machine, IoT etc? We find the best deal for you.',
-  	  'PMWEARABLE':'Do you need inmediate access to information? Are you looking for a new tracking fitness device or a fashion statement? Tell us what you need.',
-  	  'PMOTHER':'The gadget that you are looking for is not in the main menu? Please let us know what it is...We try to get it for you, as crazy as it might sound like.',
+  	  'PMHOUSE':'Technology also includes  house appliances. Are you looking to change your fridge, washing machine etc? We find the best deal for you.',
+  	  'PMWEARABLE':'Are you looking for a new tracking fitness device or a fashion statement? Tell us what you need.',
+  	  'PMOTHER':'The gadget that you are looking for is not in the main menu? Please let us know what it is...We will try to find it for you,  no matter how crazy you might think it sounds! ',
 	 
   	   // Exists
 	  
