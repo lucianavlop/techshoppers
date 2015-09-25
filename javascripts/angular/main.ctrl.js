@@ -346,7 +346,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
     	'GIFT4':'We find for you original gadgets. We give you ideas and best prices, including where to find it in a physical shop if you are not really into shopping online.', 
    	 'GIFT5':'You just need to describe the person that you want to surprise and we do all the hard work to find the perfect present at the perfect price :)',
   	  'GIFT6':'How you want to surprise him/her?',
-		
+		'GIFT7':'Tell us a bit about that special person including any interest/hobbies to help us find the perfect gadget to surprise him/her with',
+		'GIFTBUDGET':'Budget for the present :)',
 	//why section
 		'DOCUMENT':'WE DOCUMENT - YOU CHOOSE',
 		'SEVERALLANGUAGES':'SEVERAL LANGUAGES',
@@ -530,7 +531,9 @@ techshop.config(['$translateProvider', function ($translateProvider) {
     	'GIFT4':'Encontramos un gadget original para esa persona. Te damos ideas, mejores precios, incluyendo websites o tiendas donde puedes compralo si no te gusta comprar online.', 
    	 'GIFT5':'Sólo necesitas describir a la persona que quieres sorprender y nosotros hacemos todo el trabajo duro y encontramos el regalo perfecto',
   	   'GIFT6':'¿Cómo te gustaría sorprendel@?',
-  	   'TEAM':'El Equipo',
+		'GIFT7':'Cuéntanos algo a cerca de esa persona especial a la que quieres sorprender incluyendo intereses o hobbies para ayudarnos a encontrar el gadget perfecto para el/ella',
+		'GIFTBUDGET':'Presupuesto para el regalo :)',
+	   'TEAM':'El Equipo',
 		
 		//why section
 		'DOCUMENT':'TE INFORMAMOS - TÚ DECIDES',

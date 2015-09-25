@@ -47,7 +47,7 @@
                <h3>{{ 'PREM4' | translate }}</h3>
   			<br>
   		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{ 'MESSAGE' | translate }}" required></textarea>
-  	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
+  	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		    </div>
 		  
 		  
@@ -58,7 +58,7 @@
             <h3>{{ 'YOU' | translate }}</h3>
            <br>
    		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }}" required />
-   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		
 	   <div class="row">  
          <div class="six columns">
@@ -68,20 +68,20 @@
          <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }}" required/>
          </div>
     	</div>
-		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		
  	   <div class="row">  
  		 <div class="six columns">
 			
  	   	  	<input name="email" type="email" ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required autocomplete="off"/>
  	
- 		    <p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+ 		    <p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">{{ 'IEMAIL' | translate }}</p>
         </div>
         <div class="six columns">
-  			<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+  			<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
   		 	required/>
   		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
-  	   		<p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+  	   		<p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>
         </div>
       </div>
 		  

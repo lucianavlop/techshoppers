@@ -118,7 +118,7 @@ transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
        	</div>
     	
        	<div class="six columns">
- 		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+ 		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
  		 required/>
  		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
  	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>
