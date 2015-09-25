@@ -552,7 +552,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'TIME2':'Investigamos por ti, para que tú no tengas que hacerlo.',
 		'IDEAS1':' Pregúntanos acerca de regalos, o cómo resolver problemas en tu casa o empresa usando tecnología. ',
 		'WHY1':'¿Por qué?',
-		'WHY2':'Dependiendo del tipo de usuario que seas, puede que te seámos útiles por diferentes razones',
+		'WHY2':'Dependiendo del tipo de usuario que seas, puede que te seamos útiles por diferentes razones',
 			'GADGETSWEEK':'Más gadgets de la semana'
 		
     });
@@ -583,18 +583,18 @@ techshop.config(function($routeProvider){
           .when('/exists',{
                 templateUrl: 'does-exist.html'
           })
-          .when('/blog',{
+          .when('/ex1',{
                 templateUrl: 'pricing-table.html'
           })
-          .when('/blog2',{
+          .when('/ex2',{
                 templateUrl: 'pricing-table-baby monitor.html'
           })
-          .when('/segun',{
-                templateUrl: 'pricing-table-segun.html'
-          })
-          .when('/blog3',{
+          .when('/blog',{
                 templateUrl: 'blog3.html'
           })
+		  
+        
+         
           .when('/contact',{
                 templateUrl: 'contact-team.html'
           })
@@ -624,6 +624,10 @@ techshop.config(function($routeProvider){
           })
           .when('/success',{
                 templateUrl: 'success.html'
+          })
+		  
+          .when('/segun',{
+                templateUrl: 'pricing-table-segun.html'
           })
 		  
           .when('/clara301',{
