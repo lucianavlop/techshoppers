@@ -50,7 +50,7 @@
 		  <div class="six columns">
             <h3>{{ 'EXISTS10' | translate }}</h3>
 			<br>
-			<textarea  name ="message"  class ="bigarea" ng-model="main.composeEmail.message" placeholder="Describe what are you trying to achieve..." 	required ></textarea>
+			<textarea  name ="message"  class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{'EXISTS11'|translate}}" 	required ></textarea>
 	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
 		 <!-- Describe the solution of your dreams.... -->
         </div>
@@ -82,7 +82,7 @@
  			<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">{{ 'IEMAIL' | translate }}</p>
         	</div>
         	<div class="six columns">
-  		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+  		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
   		 required />
   		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
   	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>

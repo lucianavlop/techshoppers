@@ -325,6 +325,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
         'EXISTS9': "Your crazy gadgets search go in this category too!",
 	  
   	   'EXISTS10':' What is the problem that you need to solve?',
+		 'EXISTS11':' Describe what are you trying to achieve...',
   	  // Premium
 	  
     	'PREM1':'Premium Shopping Experience',
@@ -449,7 +450,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	    'REQUIRED': '¡Obligatorio!',
   	  'CEMAIL':'Confirmar Email',
   	   'IEMAIL': ' Email incorrecto',
-  	   'NOTMATCHEMAIL': ' Emails NO son iguales',
+  	   'NOTMATCHEMAIL': ' Los emails NO son iguales',
 	 
 	  
   	  'AGE': 'Edad',
@@ -499,12 +500,13 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'EXISTS4':"Describe",
 	 
     	'EXISTS5':" ¿Cuál es el problema que estás intentando solucionar, ",
-  	 'EXISTS6':" nosotros investigamos ",
-  	 'EXISTS7':" la solución que necesitas, quizás creas que no es posible pero igual nosotros encontramos una manera de hacerlo realidad. ",
-  	'EXISTS8':"Nos centramos en resolver tus problemas y los de tu negocio, para simplificar y optimizar tu trabajo. A veces la solución está más cerca de lo que crees.",
+  		 'EXISTS6':" nosotros investigamos ",
+  	   'EXISTS7':" la solución que necesitas, quizás creas que no es posible pero igual nosotros encontramos una manera de hacerlo realidad. ",
+  		'EXISTS8':"Nos centramos en resolver tus problemas y los de tu negocio, para simplificar y optimizar tu trabajo. A veces la solución está más cerca de lo que crees.",
        'EXISTS9':"Si estás buscando un gadget raro este también es tu apartado. ",
 	  
-  	 'EXISTS10':' ¿Cuál es el problema que estás intentando solucionar?',
+  		 'EXISTS10':' ¿Cuál es el problema que estás intentando solucionar?',
+		 'EXISTS11':' Describe lo que necesitas...',
   	   // Premium
 	  
     	'PREM1':'Consejo Personalizado Premium',
@@ -530,8 +532,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
    	 'GIFT3':'¿No sabes de tecnología pero te gustaría regalar algo especial? ¡Te ayudamos!',
     	'GIFT4':'Encontramos un gadget original para esa persona. Te damos ideas, mejores precios, incluyendo websites o tiendas donde puedes compralo si no te gusta comprar online.', 
    	 'GIFT5':'Sólo necesitas describir a la persona que quieres sorprender y nosotros hacemos todo el trabajo duro y encontramos el regalo perfecto',
-  	   'GIFT6':'¿Cómo te gustaría sorprendel@?',
-		'GIFT7':'Cuéntanos algo a cerca de esa persona especial a la que quieres sorprender incluyendo intereses o hobbies para ayudarnos a encontrar el gadget perfecto para el/ella',
+  	   'GIFT6':'¿Cómo te gustaría sorprenderl@?',
+		'GIFT7':'Cuéntanos algo a cerca de esa persona especial a la que quieres sorprender incluyendo intereses o aficiones para ayudarnos a encontrar el gadget perfecto para el/ella',
 		'GIFTBUDGET':'Presupuesto para el regalo :)',
 	   'TEAM':'El Equipo',
 		
