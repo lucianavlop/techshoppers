@@ -194,7 +194,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.translations('en', {
   	   'HOME':'HOME',
   	  'EXISTS':'DOES THIS EXIST?',
-  	  'SPEC':'TECH BY SPEC',
+  	  'SPEC':'I kNOW WHAT I WANT',// 'TECH BY SPEC',
 	  
   	  'GIFT':'GIFT ADVICE',
   	  'PREMIUM':'PREMIUM SHOPPING',
@@ -232,14 +232,14 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'SUBMITPM':'Find Perfect Match',
 		
 	  'SUBMITED':' Cool!! Submitted',
-		'SUCCESS': 'You have succesfully submitted your query. ',
+		'SUCCESS': 'You have successfully submitted your query. ',
 		'SUCCESS1': 'You are a bit closer to your desire gadget/solution. We will send you an e-mail with a link to get the results very soon ',
 		'SUCCESS2': 'PS: This is our BETA version and we are getting a lot of queries. It might be up to 5 days until we contact you back. Hopefully is a bit less',
 		
 		
 		'NOSUBMITED':' Sorry!!',
 		'SORRY': '	Your query has not been submitted correctly.',
-		'SORRY1': 'Please try again. Sorry for any incovenience caused.',
+		'SORRY1': 'Please try again. Sorry for any inconvenience caused.',
 	 
 		
   	  'BUDGET':'Budget',
@@ -331,6 +331,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
     	'PREM2':"Technology makes your life easier but sometimes it's difficult to find the right solution. ",
     	'PREM3':"Do you need our dedicated personal assistance? Do you have an important decision to make and need guidance? Contact us and hopefully we can provide the personal advice that you need . ",
   	 	'PREM4'  :'How can we help?',
+    	'PREM5':"We sit down with you and discuss posible solutions, we deal with you providers so you know they won't trick you with tech talk  or we can even go shopping with you ;) ",
+		
   	 	  // Tech by spec
     'SPEC1':'Get only the best!',
     'SPEC2':'Technology By Specifications',
@@ -477,7 +479,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'SUCCESS2': 'PD: Esta es nuestra version BETA y estamos teniendo muchas preguntas. Puede que tardemos hasta 5 días en contactarte. Esperamos que sea menos ',
 		
 		'NOSUBMITED':' ¡¡Lo sentimos!!',
-		'SORRY': '	Su informacion no ha sido tramitada correctamente.',
+		'SORRY': '	Su información no ha sido tramitada correctamente.',
 		'SORRY1': 'Por favor, inténtelo de nuevo. Lo sentimos.',
 	 
   	 //PERFECT MATCH
@@ -509,6 +511,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	
     	'PREM3':"¿Necesitas atención dedicada? ¿Tienes que tomar una decisión importante y necesitas consejo? Contáctanos e intentaremos darte la atención personal que necesitas",
   	'PREM4'  :'¿Cómo podemos ayudarte?',
+    	'PREM5':"Nos sentamos contigo y discutimos posible soluciones, hablamos con tus proveedores para que no te engañen con jerga técnica o incluso podemos ir a comprar contigo ;) ",
+		
 	  
 	 
 	

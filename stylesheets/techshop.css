@@ -48,6 +48,9 @@ display:inline;
 }
 */
 
+.inactive a.highlights {color: darkgreen;background:#fafafa;}
+
+
 .center {
 			text-align:center;
 }
