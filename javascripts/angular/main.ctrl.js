@@ -520,7 +520,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	 'SPEC4':"O ya sabes que gadget quieres? Dinos cual y te decimos si es una buena opción y te enseñamos otros que puedes comprar al mismo precio.",
   	  'GADGETSPEC':'Especificaciones',
   	  //GIFT
-  	  'GIFT1':'¡Regala lo mejor en technología!',
+  	  'GIFT1':'¡Regala lo mejor en tecnología!',
   	  'GIFT2':'Regalos Especiales',
    	 'GIFT3':'¿No sabes de tecnología pero te gustaría regalar algo especial? ¡Te ayudamos!',
     	'GIFT4':'Encontramos un gadget original para esa persona. Te damos ideas, mejores precios, incluyendo websites o tiendas donde puedes compralo si no te gusta comprar online.', 
@@ -539,7 +539,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'QUALITY':'CALIDAD',
 		'SUITABILITY':'IDONIEDAD',
 		'KNOWLEDGE':'CONOCIMIENTO',
-		'KNOWDLEGE1':"Somos expertos en technología. Es difícil estar al corriente de todo lo que ocurre en este área, nosotros lo intentamos.",
+		'KNOWDLEGE1':"Somos expertos en tecnología. Es difícil estar al corriente de todo lo que ocurre en este área, nosotros lo intentamos.",
 		'SUITABILITY1':"No buscamos lo mejor. Buscamos lo mejor para ti. ",
 			'QUALITY1':" Obtén mejor calidad. Usando nuestros servicios puedes encontrar un mejor producto por el mismo dinero.",
 
