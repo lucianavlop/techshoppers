@@ -193,7 +193,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	
     $translateProvider.translations('en', {
   	   'HOME':'HOME',
-  	  'EXISTS':'DOES THIS EXIST?',
+  	  'EXISTS':'DOES IT EXIST?',
   	  'SPEC':'I kNOW WHAT I WANT',// 'TECH BY SPEC',
 	  
   	  'GIFT':'GIFT ADVICE',
