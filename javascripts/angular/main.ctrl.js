@@ -574,7 +574,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.preferredLanguage('en');
 }]);
 
-techshop.config(function($routeProvider){
+techshop.config(['$routeProvider', '$locationProvider', function($routeProvider){
       $routeProvider
           .when('/',{
                 templateUrl: 'index-body.html'
@@ -657,7 +657,7 @@ techshop.config(function($routeProvider){
           .when('/error',{
                 templateUrl: 'error.html'
           });
-});
+}]);
 
 
 // Directive to match emails

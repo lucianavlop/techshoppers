@@ -62,6 +62,10 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+<!-- Single page application help for SEO search engines -->
+  <meta name="fragment" content="!">
+ <base href="/">  
+ 
 </head>
 
 <body ng-app="app" ng-controller="MainController as main">
@@ -92,7 +96,7 @@
              <li class="has-flyout"><a href="contact.html">Contact Page</a></li>
            </ul>
          </li> --><!-- END Flyout Menu -->
-        <li ng-class="main.classActive('/spec')" ><a href="#/spec">{{ 'SPEC' | translate }} </a></li>
+        <li ng-class="main.classActive('/spec')" ><a href="/spec">{{ 'SPEC' | translate }} </a></li>
           
          <li ng-class="main.classActive('/exists')" ><a href="#/exists">{{ 'EXISTS' | translate }} </a></li>
          
