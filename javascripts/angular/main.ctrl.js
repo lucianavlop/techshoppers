@@ -574,7 +574,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.preferredLanguage('en');
 }]);
 
-techshop.config(['$routeProvider', '$locationProvider', function($routeProvider){
+techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,$locationProvider){
 		//enabling HTML5 mode
     $locationProvider.html5Mode(true);
 	
