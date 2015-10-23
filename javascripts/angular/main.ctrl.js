@@ -575,6 +575,9 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 }]);
 
 techshop.config(['$routeProvider', '$locationProvider', function($routeProvider){
+		//enabling HTML5 mode
+    $locationProvider.html5Mode(true);
+	
       $routeProvider
           .when('/',{
                 templateUrl: 'index-body.html'
