@@ -579,6 +579,7 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
      // $locationProvider.html5Mode(true);
 	
 	 // $locationProvider.hasPrefix('!');
+	   $locationProvider.hashPrefix('!');
 	 
       $routeProvider
           .when('/',{
