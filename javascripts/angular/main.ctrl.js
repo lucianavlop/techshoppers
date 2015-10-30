@@ -576,9 +576,9 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 
 techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,$locationProvider){
 		//enabling HTML5 mode
-     // $locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(true);
 	
-	 //  $locationProvider.hashPrefix('!');
+	   $locationProvider.hashPrefix('!');
 	 
       $routeProvider
           .when('/',{
