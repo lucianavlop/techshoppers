@@ -37,8 +37,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
   	vm.listComputing = ["Battery Life", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design"
     , "Multimedia", "Easy Use", "Brand"];
       vm.listPhoto = ["Battery Life", "Touch Screen", "Storage", "Wifi","Design", "Easy Use", "Brand"];
-    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
-     vm.listSound = [ "Brand", "Bluethoot","Bass", "Design","Power"];
+    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Fashion"];
+     vm.listSound = [ "Brand", "Bluetooth","Bass", "Design","Power"];
      vm.listHome = ["Brand", "Design", "Power", "Energy Rating", "Easy Use"];
 	// vm.listHomeBasic = ["Design", "Power", "Brand", "Energy rating"];
   
@@ -51,8 +51,8 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 	  	vm.listComputing = ["Battery Life", "Display/Resolution", "Big Screen","Small Screen", "GPS/Navigation", "Storage", "Camera","Design"
 	    , "Multimedia", "Easy Use", "Brand"];
 	      vm.listPhoto = ["Battery Life", "Touch Screen", "Storage", "Wifi","Design", "Easy Use", "Brand"];
-	    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Phasion"];
- 	     vm.listSound = [ "Brand", "Bluethoot","Bass", "Design","Power"];
+	    vm.listWearable = ["Battery Life", "Display/Resolution",  "Design",  "Easy Use", "Brand", "Fashion"];
+ 	     vm.listSound = [ "Brand", "Bluetooth","Bass", "Design","Power"];
 	     vm.listHome = ["Brand", "Design", "Power", "Energy Rating", "Easy Use"];
 	}
 	
