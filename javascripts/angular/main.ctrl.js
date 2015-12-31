@@ -73,9 +73,9 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
  						.success(
 							function(data, status) {
 							      if (data == 'success') {
- 									  window.location = '#/success'
+ 									  window.location = '/success'
 								  }else{
-								  	  window.location = '#/error'
+								  	  window.location = '/error'
 								  }
 							  }
  						)
@@ -97,10 +97,10 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
 							function(data, status) {
 							      if (data == 'success') {
 									  
- 									  	window.location = '#/contactsuccess'
+ 									  	window.location = '/contactsuccess'
 									 
 								  }else{
-								  	  window.location = '#/error'
+								  	  window.location = '/error'
 								  }
 							  }
  						)
