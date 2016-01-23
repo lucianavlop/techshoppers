@@ -665,6 +665,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/helena306',{
                 templateUrl: 'pricing-table-helena306.html'
           })
+          .when('/astrid307',{
+                templateUrl: 'pricing-table-astrid307.html'
+          })
           .when('/contactsuccess',{
                 templateUrl: 'contactsuccess.html'
           })
