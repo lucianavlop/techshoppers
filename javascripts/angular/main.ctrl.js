@@ -349,6 +349,14 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'GIFT6':'How you want to surprise him/her?',
 		'GIFT7':'Tell us a bit about that special person including any interest/hobbies to help us find the perfect gadget to surprise him/her with',
 		'GIFTBUDGET':'Budget for the present :)',
+		
+		//People
+		'HELENA':'"Thanks a million. Very recommendable service !!!"',
+		'LUCIA':'"Super professional"',
+		'JCARLOS':'"I followed your advice and it happened"',
+		'KINGA':'"Wooow"',
+		'MAMEN':'"I saved so much money, thanks"',
+		
 	//why section
 		'DOCUMENT':'WE DOCUMENT - YOU CHOOSE',
 		'SEVERALLANGUAGES':'SEVERAL LANGUAGES',
@@ -537,6 +545,13 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'GIFTBUDGET':'Presupuesto para el regalo :)',
 	   'TEAM':'El Equipo',
 		
+		
+		//People
+		'HELENA':'"Mil gracias por todo.Servicio hiper recomendable!!!"',
+		'LUCIA':'"Super profesional"',
+		'JCARLOS':'"Seguí tu consejo y así fue"',
+		'KINGA':'"Woow"',
+		'MAMEN':'"Me he ahorrado mucho dinero, gracias"',
 		//why section
 		'DOCUMENT':'TE INFORMAMOS - TÚ DECIDES',
 		'DOCUMENT1':'Te damos suficiente información para que TÚ decidas.',
