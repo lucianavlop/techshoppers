@@ -356,6 +356,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'JCARLOS':'"I followed your advice and it happened"',
 		'KINGA':'"Wooow"',
 		'MAMEN':'"I saved so much money, thanks"',
+		'CUNADO':'"I love my present, thanks"',
 		
 	//why section
 		'DOCUMENT':'WE DOCUMENT - YOU CHOOSE',
@@ -552,6 +553,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'JCARLOS':'"Seguí tu consejo y así fue"',
 		'KINGA':'"Woow"',
 		'MAMEN':'"Me he ahorrado mucho dinero, gracias"',
+		'CUNADO':'"Me ha encantado mi regalo, gracias"',
 		//why section
 		'DOCUMENT':'TE INFORMAMOS - TÚ DECIDES',
 		'DOCUMENT1':'Te damos suficiente información para que TÚ decidas.',
