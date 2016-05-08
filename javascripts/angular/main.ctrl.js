@@ -279,7 +279,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'IEMAIL': 'Your email is incorrect',
   	  'NOTMATCHEMAIL': ' Emails do NOT match',
 	  
-  	  'NAME': 'Name',
+  	  'NAME': 'Full Name',
   	  'CITY': 'City, Town',
   	  'COUNTRY': 'Country',
   	  'AMOUNT': 'Amount or range',
@@ -355,8 +355,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'LUCIA':'"Super professional"',
 		'JCARLOS':'"I followed your advice and it happened"',
 		'KINGA':'"Wooow"',
-		'MAMEN':'"I saved so much money, thanks"',
-		'CUNADO':'"I love my present, thanks"',
+		'MAMEN':'"I saved so much money"',
+		'CUNADO':'"I love my present"',
 		
 	//why section
 		'DOCUMENT':'WE DOCUMENT - YOU CHOOSE',
@@ -420,7 +420,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'MOREINFO':'MÁS INFORMACIÓN',
   	   'MOREINFOEG':'Cuéntanos un poco a cerca de ti y como vas a usar este gadget para poder elegir el que mejor se adecua a ti .....',
 	
-  	  'NAME': 'Nombre',
+  	  'NAME': 'Nombre Completo',
   	  'CITY': 'Ciudad',
   	  'COUNTRY': 'País',
   	  'AMOUNT': 'Cantidad o rango',
@@ -552,8 +552,8 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 		'LUCIA':'"Super profesional"',
 		'JCARLOS':'"Seguí tu consejo y así fue"',
 		'KINGA':'"Woow"',
-		'MAMEN':'"Me he ahorrado mucho dinero, gracias"',
-		'CUNADO':'"Me ha encantado mi regalo, gracias"',
+		'MAMEN':'"Me he ahorrado mucho dinero"',
+		'CUNADO':'"Me ha encantado mi regalo"',
 		//why section
 		'DOCUMENT':'TE INFORMAMOS - TÚ DECIDES',
 		'DOCUMENT1':'Te damos suficiente información para que TÚ decidas.',
@@ -712,6 +712,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           })
           .when('/daithi314',{
                 templateUrl: 'pricing-table-daithi314.html'
+          })
+          .when('/nuria315',{
+                templateUrl: 'pricing-table-nuria315.html'
           })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
