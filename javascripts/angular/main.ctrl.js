@@ -719,6 +719,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
           })
+          .when('/gw-notepro3',{
+                templateUrl: 'gw-redminote3.html'
+          })
           .when('/contactsuccess',{
                 templateUrl: 'contactsuccess.html'
           })
