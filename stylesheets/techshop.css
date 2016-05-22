@@ -120,6 +120,10 @@ display:inline;
 	clear:both;
 }
 
+.left{
+	float:left;
+}
+
 .error{
 	/*color:#85635a;*/
 	/*color:#FFFF66;*/
