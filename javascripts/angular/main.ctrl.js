@@ -722,6 +722,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/gw-notepro3',{
                 templateUrl: 'gw-redminote3.html'
           })
+          .when('/gw-miband2',{
+                templateUrl: 'gw-miband2.html'
+          })
           .when('/contactsuccess',{
                 templateUrl: 'contactsuccess.html'
           })
