@@ -717,7 +717,7 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
                 templateUrl: 'pricing-table-nuria315.html'
           })
           .when('/androidbox318',{
-                templateUrl: 'ppricing-table-androidbox.html'
+                templateUrl: 'pricing-table-androidbox.html'
           })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
