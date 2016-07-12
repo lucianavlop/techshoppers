@@ -719,6 +719,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/androidbox318',{
                 templateUrl: 'pricing-table-androidbox.html'
           })
+          .when('/antonio319',{
+                templateUrl: 'pricing-table-antonio319.html'
+          })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
           })
