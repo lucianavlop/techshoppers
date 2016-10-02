@@ -247,6 +247,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  
 	  
   	   'LAPTOP': 'Laptop',
+		'PC':'Desktop PC', 
   	   'TABLET': 'Tablet',
 
  	  'TV': 'TV',
@@ -427,6 +428,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'MESSAGE': 'Mensaje',
 	  
   	   'LAPTOP': 'Portátil',
+		'PC':'PC sobremesa', 
   	   'TABLET': 'Tableta',
 		 'TV': 'TV',
 	  
