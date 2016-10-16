@@ -14,7 +14,7 @@ var control= techshop.controller("MainController", function($http, $scope, $loca
     vm.computing = ["LAPTOP", "PC", "TABLET", "Smartphone", "OTHER"];
 	
 	vm.photo = [
-	  'DIGITALCAMERA', 'OTHER'
+	  'DIGITALCAMERA','ACTIONCAMERA', 'OTHER'
 	];
 	
 	vm.wearable = [
@@ -262,6 +262,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'VACUUMCLEANER':'Vacuum cleaner',
 	  
   	  'DIGITALCAMERA':'Digital Camera',
+	  'ACTIONCAMERA':'Action Camera',
 	  
   	  'HEADPHONES':'Headphones/Earbuds',
   	  'HOMECINEMA':'Home Cinema Speakers', 
@@ -443,6 +444,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
   	  'VACUUMCLEANER':'Aspiradora',
 	  
   	   'DIGITALCAMERA':'Cámara Digital',
+	   'ACTIONCAMERA':'Cámara Deportiva',
 	  
   	  'HEADPHONES':'Cascos',
   	  'HOMECINEMA':'Altavoces Home Cinema', 
