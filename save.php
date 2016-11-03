@@ -49,7 +49,7 @@
 	 // make sure you get these SMTP settings right
 	 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl") 
 	     ->setUsername('lucianavlop@gmail.com')
-	     ->setPassword('navaza46');
+	     ->setPassword('navaza4622');
 
 	 $mailer = Swift_Mailer::newInstance($transport);
 	 // the message itself
