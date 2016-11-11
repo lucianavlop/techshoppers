@@ -744,8 +744,8 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/rubenphone325',{
                 templateUrl: 'pricing-table-ruben325.html'
           })
-          .when('/rubentablet326',{
-                templateUrl: 'pricing-table-ruben326.html'
+          .when('/rubentablet327',{
+                templateUrl: 'pricing-table-ruben327.html'
           })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
