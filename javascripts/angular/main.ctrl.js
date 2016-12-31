@@ -619,7 +619,7 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
                 templateUrl: 'does-exist.html'
           })
           .when('/ex1',{
-                templateUrl: 'pricing-table.html'
+                templateUrl: 'pricing-table-liam328.html'
           })
           .when('/ex2',{
                 templateUrl: 'pricing-table-baby monitor.html'
