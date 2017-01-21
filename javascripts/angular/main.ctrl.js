@@ -198,7 +198,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  
   	  'GIFT':'GIFT ADVICE',
   	  'PREMIUM':'PREMIUM SHOPPING',
-  	  'GADGETWEEK':'Gadget of the Week',
+  	  'GADGETWEEK':'Gadget of the Month',
   	  'MAIN':'We find the perfect product for you!',
   	  'MAIN2':'Your Technology Personal Shoppers',
   	  'TITLE1': 'Are you looking  to purchase new technology ? ',
@@ -391,7 +391,7 @@ techshop.config(['$translateProvider', function ($translateProvider) {
 	  
   	  'GIFT':'REGALOS ESPECIALES',
   	  'PREMIUM':'PREMIUM',
-  	   'GADGETWEEK':'Gadget de la semana',
+  	   'GADGETWEEK':'Gadget del mes',
   	  'MAIN':'¡Encontramos el mejor producto para ti!',
   	  'MAIN2':'Tu Personal Shopper de Tecnología',
   	  'TITLE1': ' Dinos lo que necesitas. Nosotros lo encontramos. ',
