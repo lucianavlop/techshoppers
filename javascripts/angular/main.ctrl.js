@@ -759,6 +759,12 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/nerea341',{
                 templateUrl: 'pricing-table-nerea341.html'
           })
+          .when('/paula342',{
+                templateUrl: 'pricing-table-paula342.html'
+          })
+          .when('/carmen343',{
+                templateUrl: 'pricing-table-carmen343.html'
+          })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
           })
