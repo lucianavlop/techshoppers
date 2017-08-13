@@ -768,6 +768,9 @@ techshop.config(['$routeProvider', '$locationProvider', function($routeProvider,
           .when('/carmen343',{
                 templateUrl: 'pricing-table-carmen343.html'
           })
+          .when('/miriam345',{
+                templateUrl: 'pricing-table-miriam345.html'
+          })
           .when('/gw-anker',{
                 templateUrl: 'gw-anker.html'
           })
