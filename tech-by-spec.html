@@ -1,0 +1,144 @@
+
+      
+<!-- ######################## Header ######################## -->
+        
+        
+        <header class="keyboard " >
+			<div class="layer">
+			<!-- style="background-color:silver;
+		
+background-image:
+radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+background-size:100px 50px;"> -->
+              <h1 class="welcome_text" style="color:white">{{ 'SPEC1' | translate }}</h1>    
+		  </div>
+        </header>
+<!-- ######################## Section ######################## -->
+     
+   <section class="section_light">
+   
+        <div class="row">
+        
+         <div class="twelve columns" >
+           <!-- <span class="dropcap_black lsf-icon-dropcap" title="memo" style="text-align:center"></span> -->
+	            <!-- <span class="dropcap_black lsf-icon-dropcap" title="memo" style="text-align:center"></span> -->
+	 				  <h4>{{ 'SPEC2' | translate }}</h4>
+	 				 <p class=" grey">
+	 				{{ 'SPEC3' | translate }}
+	 				  <br>
+	 				  <br>
+	 				 {{ 'SPEC4' | translate }}
+	 			  </p>
+				
+				
+				
+			
+		</div>
+        
+        
+        </div>
+        
+      </section>      
+	  
+	  <!-- background:
+    linear-gradient(135deg, transparent 24%, #bbb 24%, #bbb 25%, transparent 25%)3.8em 1.29em,
+    linear-gradient(135deg, transparent 24%, #bbb 24%, #bbb 25%, transparent 25%)1.25em 1.25em,
+   linear-gradient(225deg, #bbb 0%, #bbb 1.6%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%)0 2.5em,
+   linear-gradient(45deg, #bbb 0%, #bbb 1.6%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%)2.5em 2.5em,
+    linear-gradient(135deg, #bbb 0%, #bbb 1.6%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%)0 2.5em,
+    linear-gradient(-45deg, #bbb 0%, #bbb 1.6%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%)2.5em 2.5em,
+   linear-gradient(45deg, #bbb 0%, #bbb 1.6%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%),
+   linear-gradient(225deg, #bbb 0%, #bbb 1.5%, #ddd 1.5%, #ddd 24%, #bbb 24%, #bbb 25%, transparent 25%)2.5em 0,
+    linear-gradient(transparent 0%, transparent 8%, #ccc 8%, #ccc 10%,
+transparent 10%, transparent 18%, #ccc 18%, #ccc 20%,
+transparent 20%, transparent 28%, #ccc 28%, #ccc 30%,
+transparent 30%, transparent 38%, #ccc 38%, #ccc 40%,
+transparent 40%, transparent 48%, #ccc 48%, #ccc 50%,
+transparent 50%, transparent 58%, #ccc 58%, #ccc 60%,
+transparent 60%, transparent 68%, #ccc 68%, #ccc 70%,
+transparent 70%, transparent 78%, #ccc 78%, #ccc 80%,
+transparent 80%, transparent 88%, #ccc 88%, #ccc 90%,
+transparent 90%, transparent 98%, #ccc 98%, #ccc 100%)
+     ;
+  background-color: #ddd;
+  background-size: 5em 5em; -->	  
+	  
+	  <section class="section_medium_dark">
+     
+        
+      <!-- Contact Form -->
+      <form novalidate name="userForm" ng-init="setFormScope(this)">
+		  <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='TechBySpec'"  />
+		  
+		  
+	 
+	  <div class="row">
+		  
+		  
+  		  <div class="six columns">
+              <h3>{{ 'GADGETSPEC' | translate }}</h3>
+  			<br>
+  			<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{ 'MESSAGE' | translate }}" required></textarea>
+  		   	<p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+			<br>
+ 			 <h3>{{ 'BUDGET' | translate }} </h3>
+		 		 <input name="budget" type="text" ng-model="main.composeEmail.budget"
+		 		         placeholder="{{ 'BUDGETEG' | translate }}" required>
+			  <p ng-show="userForm.budget.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+		  </div>
+		  
+		  
+        <div class="six columns">       
+           <h3>{{ 'YOU' | translate }}</h3>
+		   
+           <br>
+   		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }}" required />
+   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+		
+	   <div class="row">  
+        <div class="six columns">
+       <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="{{ 'CITY' | translate }}"  required/>
+        </div>
+        <div class="six columns">
+        <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }}" required/>
+        </div>
+   	 	</div>
+	    <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+	 
+	   <div class="row">  
+		   	<div class="six columns">
+	   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required autocomplete="off"/>
+	    <!-- <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Your email is incorrect</p>
+	   -->
+			<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">{{ 'IEMAIL' | translate }}</p>
+       	</div>
+    	
+       	<div class="six columns">
+ 		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
+ 		 required/>
+ 		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+ 	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>
+          	</div>
+     	  </div>
+		
+		 </div>
+		 
+	</div>
+	<div class="row">
+
+        <div class="twelve columns">
+	   <input type="submit" value="{{ 'SUBMIT1' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+        </div>
+	</div>
+         </form>
+         <br><br>
+	   
+        </section>
+        
+		<!-- end section -->
+  
+  

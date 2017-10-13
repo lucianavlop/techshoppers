@@ -1,0 +1,132 @@
+
+     
+        
+<!-- ######################## Section ######################## -->
+     
+   <section class="section_light">
+        
+      <!-- Contact Form -->
+      <form novalidate name="userForm" ng-init="setFormScope(this)">
+		  <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='ContactUs'"  />
+		  
+	
+     
+	  <div class="row">
+        <div class="six columns ">
+			
+          <!-- Row Layout for forms -->
+   
+           <h3>{{ 'CONTACT1' | translate }}</h3>
+           <br>
+   		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="Name" required />
+   		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">Required!</p>
+		
+	   <div class="row">  
+         <div class="six columns">
+        	 <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="City, Town"  required/>
+         </div>
+         <div class="six columns">
+         	<input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="Country" required/>
+         </div>
+    	</div>
+		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">Required!</p>
+		
+ 	      <div class="row">  
+ 		   	<div class="six columns">
+ 	         <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required autocomplete="off"/>
+ 	 		<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">Your email is incorrect</p>
+        	</div>
+        	<div class="six columns">
+  		    <input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="Confirm Email"  match="femail" 
+  		 required/>
+  		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+  	 	  		<p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">Emails do NOT match</p>
+	       	</div>
+      	  </div>
+    
+		<textarea  name="message" class ="bigarea" ng-model="main.composeEmail.message" placeholder="Message" required></textarea>
+        <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">Required!</p>
+   	   <input type="submit" value="{{ 'CONTACT' | translate }}" class="button success"  ng-click="main.saveInfoContact(userForm.$valid)"/> 
+	 	 
+		 <br>
+		 <br>
+	 </div>
+ 
+  <div class="six columns">
+			 <br>
+			 
+      	  <!-- <h3> The Team</h3> -->
+		   
+		  
+	 		<!-- <div class="row">
+
+	 		 <div class="twelve columns"> -->
+				
+			    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.908120638409!2d-6.264835399999814!3d53.34490089207759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9d2a25aeb5%3A0x4c39744885c5e803!2sEustace+St%2C+Dublin!5e0!3m2!1ses!2sie!4v1431082689974" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+				
+	      	    <!-- <div class="six	 columns marcos">
+	      		</div>
+	            <div class="six columns eva">
+	    		</div>
+	      	    <div class="six columns jordan">
+	 	 		</div>
+	      	    <div class="six columns lucia">
+			    </div>
+			 -->
+				
+			<!-- </div> -->
+		
+	</div>
+</div>
+	
+	</section>
+		  <section class="section_dark">
+		  <p style="text-align:center">
+		  
+		  <a   href="mailto:HELLO@YOURTECHSHOPPERS.COM?subject=info"> HELLO@YOURTECHSHOPPERS.COM</a>
+		  </a>
+	  
+	   <br>
+	    <a   href="http://www.yourtechshoppers.com">www.yourtechshoppers.com</a>
+	   
+  	 	</p>
+   
+  </section>
+		   
+ 		  <!-- <iframe src=
+ 		            "http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Dieter+Schneider,+Hafstadvegen+34,+F%C3%B8rde&amp;aq=0&amp;oq=hafstadvegen+34+&amp;sll=61.450282,5.85535&amp;sspn=0.008368,0.027874&amp;g=hafstadvegen+34&amp;ie=UTF8&amp;hq=Dieter+Schneider,&amp;hnear=Hafstadvegen+34,+6800+F%C3%B8rde,+Sogn+og+Fjordane&amp;t=m&amp;ll=61.453106,5.857172&amp;spn=0.009536,0.019913&amp;z=15&amp;iwloc=A&amp;output=embed"
+ 		            style="width:400px; height:375px; border:0"></iframe><br />
+ 		            <small><a style="color: #0000ff; text-align: left;" href=
+ 		            "http://maps.google.no/maps?f=q&amp;source=embed&amp;hl=no&amp;geocode=&amp;q=Dieter+Schneider,+Hafstadvegen+34,+F%C3%B8rde&amp;aq=0&amp;oq=hafstadvegen+34+&amp;sll=61.450282,5.85535&amp;sspn=0.008368,0.027874&amp;g=hafstadvegen+34&amp;ie=UTF8&amp;hq=Dieter+Schneider,&amp;hnear=Hafstadvegen+34,+6800+F%C3%B8rde,+Sogn+og+Fjordane&amp;t=m&amp;ll=61.453106,5.857172&amp;spn=0.009536,0.019913&amp;z=15&amp;iwloc=A">
+ 		            Enlarge map</a></small>
+  -->       
+		 </div>
+		 
+   		
+	
+		 
+	</div>
+
+         </form>
+		 
+</section>		 
+		 <!-- <section class="section_main" >
+	 	<div class="row">
+	 	 <div class="twelve columns">
+
+					 <br>
+
+
+	 	    <div class="three columns marcos"></div>
+	           <div class="three columns eva"></div>
+	     	  <div class="three columns jordan"></div>
+		 	  <div class="three columns lucia"></div>
+			</div>
+	 	</div>
+	</div>
+
+
+        </section> -->
+        
+		<!-- end section -->
+ 

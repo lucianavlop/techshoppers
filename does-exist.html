@@ -1,0 +1,110 @@
+
+      
+      
+<!-- ######################## Header ######################## -->
+        
+        <header class="new-old">
+			<div class="layer">
+              <h1 class="welcome_text" style="color:WHITESMOKE;">{{ 'EXISTS1' | translate }} <!-- (find a nice picture that reflects the use case for the background) --></h1>    
+           </div>
+	    </header>
+     
+        
+<!-- ######################## Section ######################## -->
+     
+   <section class="section_light">
+   
+        <div class="row">
+        
+         <div class="twelve columns">
+            <!-- <h4>Does this Product Exist?
+
+			</h4> -->
+   			<p class=" grey">
+   		 	{{ 'EXISTS2' | translate }} <br>{{ 'EXISTS3' | translate }}
+   		   <br><br>
+   		 	 <strong>{{ 'EXISTS4' | translate }}</strong> {{ 'EXISTS5' | translate }}
+              <strong>   {{ 'EXISTS6' | translate }}</strong> {{ 'EXISTS7' | translate }}
+   			  <br>{{ 'EXISTS8' | translate }}
+   		   <br> 
+		  
+   		  {{ 'EXISTS9' | translate }}
+   		 <!-- We find hidden treasures for you or advice you and what you should us to solve a specific problem
+   			 -->
+   			</p>
+   		    </div>
+        
+        
+        </div>
+      </section>
+	  
+	  <section class="section_medium_dark">  
+		
+      <!-- Contact Form -->
+	  <form    novalidate name="userForm" ng-init="setFormScope(this)" >
+     <input type="hidden" ng-model="main.composeEmail.section"  ng-init="main.composeEmail.section='DoesExist'"  />
+     
+	  <div class="row">
+	    
+		
+		  <div class="six columns">
+            <h3>{{ 'EXISTS10' | translate }}</h3>
+			<br>
+			<textarea  name ="message"  class ="bigarea" ng-model="main.composeEmail.message" placeholder="{{'EXISTS11'|translate}}" 	required ></textarea>
+	     <p ng-show="userForm.message.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+		 <!-- Describe the solution of your dreams.... -->
+        </div>
+		
+		  
+        <div class="six columns">
+          <!-- Row Layout for forms -->  
+        <h3>{{ 'YOU' | translate }}</h3>
+        <br>
+		<input type="text"  name="name" ng-model="main.composeEmail.name"  placeholder="{{ 'NAME' | translate }} " required />
+		<p ng-show="userForm.name.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+		
+		<div class="row">  
+          <div class="six columns">
+         <input name="city"  type="text"  ng-model="main.composeEmail.city" class="twelve" placeholder="{{ 'CITY' | translate }} "  required/>
+          </div>
+          <div class="six columns">
+          <input name="country"  type="text"  ng-model="main.composeEmail.country" class="twelve" placeholder="{{ 'COUNTRY' | translate }} " required/>
+          </div>
+     	</div>
+		 <p ng-show="userForm.city.$invalid && userForm.$submitted" class="error">{{ 'REQUIRED' | translate }}</p>
+		
+ 	   <div class="row">  
+ 		   	<div class="six columns">
+ 	   <input name="email" type="email"  ng-model="main.composeEmail.email" class="twelve" placeholder="Email"  id="femail" required
+	   autocomplete="off"/>
+ 	    <!-- <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Your email is incorrect</p>
+ 	   -->
+ 			<p ng-show="userForm.email.$invalid && userForm.$submitted" class="error">{{ 'IEMAIL' | translate }}</p>
+        	</div>
+        	<div class="six columns">
+  		<input type="email"  name="emailConfirm" ng-model="main.composeEmail.emailConfirm" class="twelve" placeholder="{{ 'CEMAIL' | translate }}"  match="femail" 
+  		 required />
+  		<!-- <p ng-show="userForm.emailConfirm.$invalid && userForm.$submitted" class="error">Required!</p> -->
+  	   <p ng-show="userForm.emailConfirm.$error.mismatch && userForm.$submitted" class="error">{{ 'NOTMATCHEMAIL' | translate }}</p>
+           	</div>
+      	  </div>
+	   	<!-- <h3>Budget</h3>
+ 			  <input name="budget" type="text" ng-model="main.composeEmail.budget"
+ 		         placeholder="" > -->
+		 </div>
+		
+	</div>
+	<div class="row">
+
+        <div class="twelve columns">
+	   <input type="submit" value="{{ 'SUBMIT1' | translate }}" class="button success"  ng-click="main.saveInfo(userForm.$valid)"/> 
+       
+        </div>
+	</div>
+         </form>
+       
+    </section>
+
+      
+
+
