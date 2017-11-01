@@ -48,14 +48,14 @@
 	$subject = 'Your tech Shoppers';
 	 // make sure you get these SMTP settings right
 	 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl") 
-	     ->setUsername('lucianavlop@gmail.com')
-	     ->setPassword('navaza4622');
+	     ->setUsername('yourtechshoppers@gmail.com')
+	     ->setPassword('navaza46y');
 
 	 $mailer = Swift_Mailer::newInstance($transport);
 	 // the message itself
 	 $message = Swift_Message::newInstance($subject)
 	     ->setFrom(array('info@yourtechshoppers.com' => $json['section']))
-	     ->setTo(array('lucianavlop@gmail.com'))
+	     ->setTo(array('yourtechshoppers@gmail.com'))
 	     ->setBody($body);
 
 	 $result = $mailer->send($message);
