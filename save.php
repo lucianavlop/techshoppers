@@ -55,7 +55,7 @@
 	 // the message itself
 	 $message = Swift_Message::newInstance($subject)
 	     ->setFrom(array('info@yourtechshoppers.com' => $json['section']))
-	     ->setTo(array('yourtechshoppers@gmail.com'))
+	     ->setTo(array('lucianavlop@gmail.com'))
 	     ->setBody($body);
 
 	 $result = $mailer->send($message);
